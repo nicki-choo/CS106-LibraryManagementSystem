@@ -1,0 +1,11 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>add member.png</file>
+        <file>Group 42.jpg</file>
+        <file>Group 82.png</file>
+        <file>school-class-library-with-books-svgrepo-com 1.png</file>
+        <file>three-books-svgrepo-com 1.png</file>
+        <file>writer-svgrepo-com 1.png</file>
+        <file>Group 6.png</file>
+    </qresource>
+</RCC>
