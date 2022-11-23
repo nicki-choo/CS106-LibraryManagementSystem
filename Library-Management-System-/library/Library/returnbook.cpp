@@ -13,7 +13,7 @@ ReturnBook::ReturnBook(QWidget *parent) :
     ui->issueDate->setDate(QDate::currentDate());
     ui->returnDate->setDate(QDate::currentDate());
 
-    //call the mail Database
+    //call the main Database
     digitalLibrary lib;
     auto db = lib.db;
 
@@ -71,7 +71,7 @@ void ReturnBook::on_returnBtn_clicked()
             QMessageBox::information(this, "SUCCESS", "Book returned successfully");
     }
 
-    //updtae the table view
+    //update the table view
     auto query = QSqlQuery(db);
     QString select{"SELECT * FROM bookStatus"};
     if(!query.exec(select))
@@ -90,9 +90,9 @@ void ReturnBook::showInfo()
         QModelIndex row = selectedRow.at(0);
         auto bookID = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 0)).toString();
         auto memberID = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 1)).toString();
-        auto issueDate = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 3)).toString();
-        auto returnDate = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 4)).toString();
-        auto note = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 5)).toString();
+        auto issueDate = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 2)).toString();
+        auto returnDate = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 3)).toString();
+        auto note = ui->tableView->model()->data(ui->tableView->model()->index(row.row(), 4)).toString();
 
         ui->bookID->setText(bookID);
         ui->memberID->setText(memberID);
@@ -162,7 +162,7 @@ void ReturnBook::on_deleteBtn_clicked()
     else
         QMessageBox::information(this, "SUCCESS", "Book deleted successfully");
 
-    //updtae the table view
+    //update the table view
     QString select{"SELECT * FROM bookStatus"};
     if(!query.exec(select))
         qDebug() << "Cannot select from bookStatus";

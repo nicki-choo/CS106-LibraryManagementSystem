@@ -26,6 +26,7 @@ SOURCES += \
     managebooks.cpp \
     memberslist.cpp \
     newpasswd.cpp \
+    prebook.cpp \
     returnbook.cpp \
     signup.cpp
 
@@ -46,6 +47,7 @@ HEADERS += \
     managebooks.h \
     memberslist.h \
     newpasswd.h \
+    prebook.h \
     returnbook.h \
     signup.h
 
@@ -66,6 +68,7 @@ FORMS += \
     managebooks.ui \
     memberslist.ui \
     newpasswd.ui \
+    prebook.ui \
     returnbook.ui \
     signup.ui
 

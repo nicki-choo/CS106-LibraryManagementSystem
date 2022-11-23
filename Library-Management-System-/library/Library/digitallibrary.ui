@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>850</width>
-    <height>825</height>
+    <height>864</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +19,7 @@
      <x>12</x>
      <y>12</y>
      <width>826</width>
-     <height>801</height>
+     <height>821</height>
     </rect>
    </property>
    <property name="styleSheet">
@@ -1213,6 +1213,45 @@ border-radius:8px;
          </property>
          <property name="flat">
           <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="horizontalLayout">
+       <item>
+        <spacer name="horizontalSpacer">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>28</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item>
+        <widget class="QPushButton" name="prebookbookbtn">
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+font: 500 10pt &quot;Work Sans&quot;;
+color: #2A3540;
+padding : 0 8px;
+}
+QPushButton:hover:!pressed
+{
+background:#FFFFFF;
+border-radius:8px;
+}</string>
+         </property>
+         <property name="text">
+          <string>Prebook Book</string>
          </property>
         </widget>
        </item>

@@ -301,7 +301,7 @@ font-color: #2A3540
 color: #2A3540;</string>
         </property>
         <property name="text">
-         <string>Date</string>
+         <string>Publish Date</string>
         </property>
        </widget>
       </item>

@@ -13,6 +13,7 @@
 #include <booklist.h>
 #include <issuebook.h>
 #include <returnbook.h>
+#include <prebook.h>
 #include <QMessageBox>
 #include <QDebug>
 
@@ -22,6 +23,7 @@ digitalLibrary::digitalLibrary(QWidget *parent) :
 {
     ui->setupUi(this);
     connectDB();
+    this->setWindowTitle("Main Menu");
 
     setUsername(username);
     showBookNum();
@@ -88,6 +90,13 @@ void digitalLibrary::connectDB()
                        "IssueDate date, ReturnDate date, Note VARCHAR(50))"};
     if(!query.exec(Table))
         QMessageBox::critical(this,"Info","Cannot create bookStatus Table");
+
+    //Create a table named prebook_list
+    QString PrebookTable{"CREATE TABLE IF NOT EXISTS prebook_list"
+                         "(Book INTEGER, Member INTEGER, PrebookFrom datetime, PrebookTo datetime, Note VARCHAR(50))"};
+
+    if(!query.exec(PrebookTable))
+        QMessageBox::critical(this,"Info", "Cannot create Prebook Table");
 }
 
 digitalLibrary::~digitalLibrary()
@@ -164,6 +173,12 @@ void digitalLibrary::on_issueBookBtn_clicked()
 void digitalLibrary::on_returnBookBtn_clicked()
 {
     ReturnBook book;
+    book.exec();
+}
+
+void digitalLibrary::on_prebookbookbtn_clicked()
+{
+    Prebook book;
     book.exec();
 }
 
@@ -283,6 +298,9 @@ void digitalLibrary::showCover(){
         }
     }
 }
+
+
+
 
 
 

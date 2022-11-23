@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE QtCreatorProject>
-<!-- Written by QtCreator 8.0.2, 2022-11-18T16:32:27. -->
+<!-- Written by QtCreator 8.0.2, 2022-11-23T02:34:41. -->
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -235,8 +235,9 @@
     <valuelist type="QVariantList" key="CustomOutputParsers"/>
     <value type="int" key="PE.EnvironmentAspect.Base">2</value>
     <valuelist type="QVariantList" key="PE.EnvironmentAspect.Changes"/>
-    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/nickichoo/Desktop/Library-Management-System-main/library/Library/Library.pro</value>
-    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/nickichoo/Desktop/Library-Management-System-main/library/Library/Library.pro</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Library2</value>
+    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">Qt4ProjectManager.Qt4RunConfiguration:/Users/nickichoo/Desktop/CS106 Assessment 2/CS106-LibraryManagementSystem/Library-Management-System-/library/Library/Library.pro</value>
+    <value type="QString" key="ProjectExplorer.RunConfiguration.BuildKey">/Users/nickichoo/Desktop/CS106 Assessment 2/CS106-LibraryManagementSystem/Library-Management-System-/library/Library/Library.pro</value>
     <value type="bool" key="RunConfiguration.UseCppDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseCppDebuggerAuto">true</value>
     <value type="bool" key="RunConfiguration.UseLibrarySearchPath">true</value>
