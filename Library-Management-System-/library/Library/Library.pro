@@ -13,6 +13,7 @@ SOURCES += \
     addmember.cpp \
     authorslist.cpp \
     booklist.cpp \
+    choosepage.cpp \
     deletebook.cpp \
     deletemember.cpp \
     digitallibrary.cpp \
@@ -35,6 +36,7 @@ HEADERS += \
     addmember.h \
     authorslist.h \
     booklist.h \
+    choosepage.h \
     deletebook.h \
     deletemember.h \
     digitallibrary.h \
@@ -56,6 +58,7 @@ FORMS += \
     addmember.ui \
     authorslist.ui \
     booklist.ui \
+    choosepage.ui \
     deletebook.ui \
     deletemember.ui \
     digitallibrary.ui \
