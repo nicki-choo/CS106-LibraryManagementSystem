@@ -33,13 +33,13 @@ public:
     QSpacerItem *horizontalSpacer_4;
     QGroupBox *loginGroup;
     QGridLayout *gridLayout_2;
+    QLineEdit *password;
+    QLineEdit *username;
     QLabel *label_7;
     QPushButton *signUpButton;
-    QPushButton *forgetPasswdBtn;
-    QLineEdit *username;
-    QLabel *label_6;
-    QLineEdit *password;
     QPushButton *loginButton;
+    QLabel *label_6;
+    QPushButton *forgetPasswdBtn;
 
     void setupUi(QDialog *Login)
     {
@@ -77,6 +77,31 @@ public:
 "color: #2A3540"));
         gridLayout_2 = new QGridLayout(loginGroup);
         gridLayout_2->setObjectName(QString::fromUtf8("gridLayout_2"));
+        password = new QLineEdit(loginGroup);
+        password->setObjectName(QString::fromUtf8("password"));
+        password->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+        password->setEchoMode(QLineEdit::Password);
+
+        gridLayout_2->addWidget(password, 1, 1, 1, 2);
+
+        username = new QLineEdit(loginGroup);
+        username->setObjectName(QString::fromUtf8("username"));
+        username->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+
+        gridLayout_2->addWidget(username, 0, 1, 1, 2);
+
         label_7 = new QLabel(loginGroup);
         label_7->setObjectName(QString::fromUtf8("label_7"));
         label_7->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
@@ -119,68 +144,6 @@ public:
 
         gridLayout_2->addWidget(signUpButton, 2, 2, 1, 1);
 
-        forgetPasswdBtn = new QPushButton(loginGroup);
-        forgetPasswdBtn->setObjectName(QString::fromUtf8("forgetPasswdBtn"));
-        forgetPasswdBtn->setFocusPolicy(Qt::ClickFocus);
-        forgetPasswdBtn->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"border-radius:15px;\n"
-"padding : 0 4px;\n"
-"background: #FFFFFF;\n"
-"border-radius:10px;\n"
-"border-color: #001873;\n"
-"border-width: 3px;\n"
-"border-style: solid;\n"
-"color: #2A3540;\n"
-"font: 600 24pt \"Work Sans\";\n"
-"}\n"
-"QPushButton:hover:!pressed\n"
-"\n"
-"{\n"
-"background:#4f85e2;\n"
-"}\n"
-"QToolButton\n"
-"{\n"
-"\n"
-"border-radius:10px;\n"
-"bacground:red;\n"
-"color:red;\n"
-"}"));
-
-        gridLayout_2->addWidget(forgetPasswdBtn, 3, 1, 1, 2);
-
-        username = new QLineEdit(loginGroup);
-        username->setObjectName(QString::fromUtf8("username"));
-        username->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-
-        gridLayout_2->addWidget(username, 0, 1, 1, 2);
-
-        label_6 = new QLabel(loginGroup);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
-"font-color: #2A3540;\n"
-"background-color: none;"));
-
-        gridLayout_2->addWidget(label_6, 1, 0, 1, 1);
-
-        password = new QLineEdit(loginGroup);
-        password->setObjectName(QString::fromUtf8("password"));
-        password->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-        password->setEchoMode(QLineEdit::Password);
-
-        gridLayout_2->addWidget(password, 1, 1, 1, 2);
-
         loginButton = new QPushButton(loginGroup);
         loginButton->setObjectName(QString::fromUtf8("loginButton"));
         loginButton->setMouseTracking(true);
@@ -217,6 +180,43 @@ public:
 
         gridLayout_2->addWidget(loginButton, 2, 1, 1, 1);
 
+        label_6 = new QLabel(loginGroup);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
+"font-color: #2A3540;\n"
+"background-color: none;"));
+
+        gridLayout_2->addWidget(label_6, 1, 0, 1, 1);
+
+        forgetPasswdBtn = new QPushButton(loginGroup);
+        forgetPasswdBtn->setObjectName(QString::fromUtf8("forgetPasswdBtn"));
+        forgetPasswdBtn->setFocusPolicy(Qt::ClickFocus);
+        forgetPasswdBtn->setStyleSheet(QString::fromUtf8("QPushButton{\n"
+"border-radius:15px;\n"
+"padding : 0 4px;\n"
+"background: #FFFFFF;\n"
+"border-radius:10px;\n"
+"border-color: #001873;\n"
+"border-width: 3px;\n"
+"border-style: solid;\n"
+"color: #2A3540;\n"
+"font: 600 24pt \"Work Sans\";\n"
+"}\n"
+"QPushButton:hover:!pressed\n"
+"\n"
+"{\n"
+"background:#4f85e2;\n"
+"}\n"
+"QToolButton\n"
+"{\n"
+"\n"
+"border-radius:10px;\n"
+"bacground:red;\n"
+"color:red;\n"
+"}"));
+
+        gridLayout_2->addWidget(forgetPasswdBtn, 3, 1, 1, 2);
+
 
         verticalLayout->addWidget(loginGroup);
 
@@ -233,12 +233,12 @@ public:
     {
         Login->setWindowTitle(QCoreApplication::translate("Login", "Dialog", nullptr));
         label_5->setText(QString());
-        loginGroup->setTitle(QCoreApplication::translate("Login", "LOGIN", nullptr));
+        loginGroup->setTitle(QCoreApplication::translate("Login", "ADMINISTRATOR LOGIN", nullptr));
         label_7->setText(QCoreApplication::translate("Login", "USERNAME", nullptr));
         signUpButton->setText(QCoreApplication::translate("Login", "SIGN UP", nullptr));
-        forgetPasswdBtn->setText(QCoreApplication::translate("Login", "FORGET PASSWORD", nullptr));
-        label_6->setText(QCoreApplication::translate("Login", "PASSWORD", nullptr));
         loginButton->setText(QCoreApplication::translate("Login", "LOGIN", nullptr));
+        label_6->setText(QCoreApplication::translate("Login", "PASSWORD", nullptr));
+        forgetPasswdBtn->setText(QCoreApplication::translate("Login", "FORGET PASSWORD", nullptr));
     } // retranslateUi
 
 };

@@ -69,6 +69,7 @@ public:
     QLabel *label_10;
     QLabel *label_15;
     QLabel *label_3;
+    QPushButton *logoutbutton;
 
     void setupUi(QDialog *memberlibrary)
     {
@@ -391,6 +392,9 @@ public:
         label_3->setObjectName(QString::fromUtf8("label_3"));
         label_3->setGeometry(QRect(-3, 180, 791, 671));
         label_3->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
+        logoutbutton = new QPushButton(frame_4);
+        logoutbutton->setObjectName(QString::fromUtf8("logoutbutton"));
+        logoutbutton->setGeometry(QRect(650, 20, 100, 32));
         label_3->raise();
         frame_3->raise();
         frame->raise();
@@ -398,6 +402,7 @@ public:
         username->raise();
         label_10->raise();
         label_15->raise();
+        logoutbutton->raise();
 
         retranslateUi(memberlibrary);
 
@@ -442,6 +447,7 @@ public:
 "bookkeeper@library.co.nz", nullptr));
         label_15->setText(QString());
         label_3->setText(QString());
+        logoutbutton->setText(QCoreApplication::translate("memberlibrary", "LOGOUT", nullptr));
     } // retranslateUi
 
 };

@@ -25,6 +25,7 @@ SOURCES += \
     main.cpp \
     manageauthors.cpp \
     managebooks.cpp \
+    memberedit.cpp \
     memberevents.cpp \
     memberlibrary.cpp \
     memberlogin.cpp \
@@ -32,6 +33,7 @@ SOURCES += \
     memberprofile.cpp \
     membersearch1.cpp \
     membersignup.cpp \
+    membersignup2.cpp \
     memberslist.cpp \
     newpasswd.cpp \
     prebook.cpp \
@@ -54,6 +56,7 @@ HEADERS += \
     login.h \
     manageauthors.h \
     managebooks.h \
+    memberedit.h \
     memberevents.h \
     memberlibrary.h \
     memberlogin.h \
@@ -61,6 +64,7 @@ HEADERS += \
     memberprofile.h \
     membersearch1.h \
     membersignup.h \
+    membersignup2.h \
     memberslist.h \
     newpasswd.h \
     prebook.h \
@@ -83,6 +87,7 @@ FORMS += \
     login.ui \
     manageauthors.ui \
     managebooks.ui \
+    memberedit.ui \
     memberevents.ui \
     memberlibrary.ui \
     memberlogin.ui \
@@ -90,6 +95,7 @@ FORMS += \
     memberprofile.ui \
     membersearch1.ui \
     membersignup.ui \
+    membersignup2.ui \
     memberslist.ui \
     newpasswd.ui \
     prebook.ui \

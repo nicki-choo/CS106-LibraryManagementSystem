@@ -68,6 +68,7 @@ SOURCES       = ../Library/addbook.cpp \
 		../Library/main.cpp \
 		../Library/manageauthors.cpp \
 		../Library/managebooks.cpp \
+		../Library/memberedit.cpp \
 		../Library/memberevents.cpp \
 		../Library/memberlibrary.cpp \
 		../Library/memberlogin.cpp \
@@ -75,6 +76,7 @@ SOURCES       = ../Library/addbook.cpp \
 		../Library/memberprofile.cpp \
 		../Library/membersearch1.cpp \
 		../Library/membersignup.cpp \
+		../Library/membersignup2.cpp \
 		../Library/memberslist.cpp \
 		../Library/newpasswd.cpp \
 		../Library/prebook.cpp \
@@ -95,6 +97,7 @@ SOURCES       = ../Library/addbook.cpp \
 		moc_login.cpp \
 		moc_manageauthors.cpp \
 		moc_managebooks.cpp \
+		moc_memberedit.cpp \
 		moc_memberevents.cpp \
 		moc_memberlibrary.cpp \
 		moc_memberlogin.cpp \
@@ -102,6 +105,7 @@ SOURCES       = ../Library/addbook.cpp \
 		moc_memberprofile.cpp \
 		moc_membersearch1.cpp \
 		moc_membersignup.cpp \
+		moc_membersignup2.cpp \
 		moc_memberslist.cpp \
 		moc_newpasswd.cpp \
 		moc_prebook.cpp \
@@ -123,6 +127,7 @@ OBJECTS       = addbook.o \
 		main.o \
 		manageauthors.o \
 		managebooks.o \
+		memberedit.o \
 		memberevents.o \
 		memberlibrary.o \
 		memberlogin.o \
@@ -130,6 +135,7 @@ OBJECTS       = addbook.o \
 		memberprofile.o \
 		membersearch1.o \
 		membersignup.o \
+		membersignup2.o \
 		memberslist.o \
 		newpasswd.o \
 		prebook.o \
@@ -151,6 +157,7 @@ OBJECTS       = addbook.o \
 		moc_login.o \
 		moc_manageauthors.o \
 		moc_managebooks.o \
+		moc_memberedit.o \
 		moc_memberevents.o \
 		moc_memberlibrary.o \
 		moc_memberlogin.o \
@@ -158,6 +165,7 @@ OBJECTS       = addbook.o \
 		moc_memberprofile.o \
 		moc_membersearch1.o \
 		moc_membersignup.o \
+		moc_membersignup2.o \
 		moc_memberslist.o \
 		moc_newpasswd.o \
 		moc_prebook.o \
@@ -352,6 +360,7 @@ DIST          = /Users/briartait/Qt/6.3.2/macos/mkspecs/features/spec_pre.prf \
 		../Library/login.h \
 		../Library/manageauthors.h \
 		../Library/managebooks.h \
+		../Library/memberedit.h \
 		../Library/memberevents.h \
 		../Library/memberlibrary.h \
 		../Library/memberlogin.h \
@@ -359,6 +368,7 @@ DIST          = /Users/briartait/Qt/6.3.2/macos/mkspecs/features/spec_pre.prf \
 		../Library/memberprofile.h \
 		../Library/membersearch1.h \
 		../Library/membersignup.h \
+		../Library/membersignup2.h \
 		../Library/memberslist.h \
 		../Library/newpasswd.h \
 		../Library/prebook.h \
@@ -379,6 +389,7 @@ DIST          = /Users/briartait/Qt/6.3.2/macos/mkspecs/features/spec_pre.prf \
 		../Library/main.cpp \
 		../Library/manageauthors.cpp \
 		../Library/managebooks.cpp \
+		../Library/memberedit.cpp \
 		../Library/memberevents.cpp \
 		../Library/memberlibrary.cpp \
 		../Library/memberlogin.cpp \
@@ -386,6 +397,7 @@ DIST          = /Users/briartait/Qt/6.3.2/macos/mkspecs/features/spec_pre.prf \
 		../Library/memberprofile.cpp \
 		../Library/membersearch1.cpp \
 		../Library/membersignup.cpp \
+		../Library/membersignup2.cpp \
 		../Library/memberslist.cpp \
 		../Library/newpasswd.cpp \
 		../Library/prebook.cpp \
@@ -411,7 +423,7 @@ include /Users/briartait/Qt/6.3.2/macos/mkspecs/features/mac/sdk.mk
 first: all
 ####### Build rules
 
-Library.app/Contents/MacOS/Library: ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h $(OBJECTS)  
+Library.app/Contents/MacOS/Library: ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberedit.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_membersignup2.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h $(OBJECTS)  
 	@test -d Library.app/Contents/MacOS/ || mkdir -p Library.app/Contents/MacOS/
 	$(LINK) $(LFLAGS) -o $(TARGET)  $(OBJECTS) $(OBJCOMP) $(LIBS)
 
@@ -806,9 +818,9 @@ distdir: FORCE
 	@test -d $(DISTDIR) || mkdir -p $(DISTDIR)
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents ../Library/icons.qrc $(DISTDIR)/
-	$(COPY_FILE) --parents ../Library/addbook.h ../Library/addmember.h ../Library/authorslist.h ../Library/booklist.h ../Library/choosepage.h ../Library/deletebook.h ../Library/deletemember.h ../Library/digitallibrary.h ../Library/editbook.h ../Library/editmember.h ../Library/genrelist.h ../Library/issuebook.h ../Library/login.h ../Library/manageauthors.h ../Library/managebooks.h ../Library/memberevents.h ../Library/memberlibrary.h ../Library/memberlogin.h ../Library/memberprebook.h ../Library/memberprofile.h ../Library/membersearch1.h ../Library/membersignup.h ../Library/memberslist.h ../Library/newpasswd.h ../Library/prebook.h ../Library/returnbook.h ../Library/signup.h $(DISTDIR)/
-	$(COPY_FILE) --parents ../Library/addbook.cpp ../Library/addmember.cpp ../Library/authorslist.cpp ../Library/booklist.cpp ../Library/choosepage.cpp ../Library/deletebook.cpp ../Library/deletemember.cpp ../Library/digitallibrary.cpp ../Library/editbook.cpp ../Library/editmember.cpp ../Library/genrelist.cpp ../Library/issuebook.cpp ../Library/login.cpp ../Library/main.cpp ../Library/manageauthors.cpp ../Library/managebooks.cpp ../Library/memberevents.cpp ../Library/memberlibrary.cpp ../Library/memberlogin.cpp ../Library/memberprebook.cpp ../Library/memberprofile.cpp ../Library/membersearch1.cpp ../Library/membersignup.cpp ../Library/memberslist.cpp ../Library/newpasswd.cpp ../Library/prebook.cpp ../Library/returnbook.cpp ../Library/signup.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents ../Library/addbook.ui ../Library/addmember.ui ../Library/authorslist.ui ../Library/booklist.ui ../Library/choosepage.ui ../Library/deletebook.ui ../Library/deletemember.ui ../Library/digitallibrary.ui ../Library/editbook.ui ../Library/editmember.ui ../Library/genrelist.ui ../Library/issuebook.ui ../Library/login.ui ../Library/manageauthors.ui ../Library/managebooks.ui ../Library/memberevents.ui ../Library/memberlibrary.ui ../Library/memberlogin.ui ../Library/memberprebook.ui ../Library/memberprofile.ui ../Library/membersearch1.ui ../Library/membersignup.ui ../Library/memberslist.ui ../Library/newpasswd.ui ../Library/prebook.ui ../Library/returnbook.ui ../Library/signup.ui $(DISTDIR)/
+	$(COPY_FILE) --parents ../Library/addbook.h ../Library/addmember.h ../Library/authorslist.h ../Library/booklist.h ../Library/choosepage.h ../Library/deletebook.h ../Library/deletemember.h ../Library/digitallibrary.h ../Library/editbook.h ../Library/editmember.h ../Library/genrelist.h ../Library/issuebook.h ../Library/login.h ../Library/manageauthors.h ../Library/managebooks.h ../Library/memberedit.h ../Library/memberevents.h ../Library/memberlibrary.h ../Library/memberlogin.h ../Library/memberprebook.h ../Library/memberprofile.h ../Library/membersearch1.h ../Library/membersignup.h ../Library/membersignup2.h ../Library/memberslist.h ../Library/newpasswd.h ../Library/prebook.h ../Library/returnbook.h ../Library/signup.h $(DISTDIR)/
+	$(COPY_FILE) --parents ../Library/addbook.cpp ../Library/addmember.cpp ../Library/authorslist.cpp ../Library/booklist.cpp ../Library/choosepage.cpp ../Library/deletebook.cpp ../Library/deletemember.cpp ../Library/digitallibrary.cpp ../Library/editbook.cpp ../Library/editmember.cpp ../Library/genrelist.cpp ../Library/issuebook.cpp ../Library/login.cpp ../Library/main.cpp ../Library/manageauthors.cpp ../Library/managebooks.cpp ../Library/memberedit.cpp ../Library/memberevents.cpp ../Library/memberlibrary.cpp ../Library/memberlogin.cpp ../Library/memberprebook.cpp ../Library/memberprofile.cpp ../Library/membersearch1.cpp ../Library/membersignup.cpp ../Library/membersignup2.cpp ../Library/memberslist.cpp ../Library/newpasswd.cpp ../Library/prebook.cpp ../Library/returnbook.cpp ../Library/signup.cpp $(DISTDIR)/
+	$(COPY_FILE) --parents ../Library/addbook.ui ../Library/addmember.ui ../Library/authorslist.ui ../Library/booklist.ui ../Library/choosepage.ui ../Library/deletebook.ui ../Library/deletemember.ui ../Library/digitallibrary.ui ../Library/editbook.ui ../Library/editmember.ui ../Library/genrelist.ui ../Library/issuebook.ui ../Library/login.ui ../Library/manageauthors.ui ../Library/managebooks.ui ../Library/memberedit.ui ../Library/memberevents.ui ../Library/memberlibrary.ui ../Library/memberlogin.ui ../Library/memberprebook.ui ../Library/memberprofile.ui ../Library/membersearch1.ui ../Library/membersignup.ui ../Library/membersignup2.ui ../Library/memberslist.ui ../Library/newpasswd.ui ../Library/prebook.ui ../Library/returnbook.ui ../Library/signup.ui $(DISTDIR)/
 
 
 clean: compiler_clean 
@@ -844,7 +856,9 @@ qrc_icons.cpp: ../Library/icons.qrc \
 		/Users/briartait/Desktop/MemResource/ebookgenre.png \
 		/Users/briartait/Desktop/MemResource/libimg2.png \
 		/Users/briartait/Desktop/MemResource/Group\ 80.png \
+		/Users/briartait/Desktop/MemResource/adminimg.png \
 		/Users/briartait/Desktop/MemResource/Rectangle\ 19.png \
+		/Users/briartait/Desktop/MemResource/memberimg.png \
 		/Users/briartait/Desktop/MemResource/Group\ 79.png \
 		/Users/briartait/Desktop/MemResource/background.png \
 		/Users/briartait/Desktop/MemResource/maggenre.png \
@@ -875,9 +889,9 @@ qrc_icons.cpp: ../Library/icons.qrc \
 		../Library/Confessions.jpg
 	/Users/briartait/Qt/6.3.2/macos/libexec/rcc -name icons --no-zstd ../Library/icons.qrc -o qrc_icons.cpp
 
-compiler_moc_header_make_all: moc_addbook.cpp moc_addmember.cpp moc_authorslist.cpp moc_booklist.cpp moc_choosepage.cpp moc_deletebook.cpp moc_deletemember.cpp moc_digitallibrary.cpp moc_editbook.cpp moc_editmember.cpp moc_genrelist.cpp moc_issuebook.cpp moc_login.cpp moc_manageauthors.cpp moc_managebooks.cpp moc_memberevents.cpp moc_memberlibrary.cpp moc_memberlogin.cpp moc_memberprebook.cpp moc_memberprofile.cpp moc_membersearch1.cpp moc_membersignup.cpp moc_memberslist.cpp moc_newpasswd.cpp moc_prebook.cpp moc_returnbook.cpp moc_signup.cpp
+compiler_moc_header_make_all: moc_addbook.cpp moc_addmember.cpp moc_authorslist.cpp moc_booklist.cpp moc_choosepage.cpp moc_deletebook.cpp moc_deletemember.cpp moc_digitallibrary.cpp moc_editbook.cpp moc_editmember.cpp moc_genrelist.cpp moc_issuebook.cpp moc_login.cpp moc_manageauthors.cpp moc_managebooks.cpp moc_memberedit.cpp moc_memberevents.cpp moc_memberlibrary.cpp moc_memberlogin.cpp moc_memberprebook.cpp moc_memberprofile.cpp moc_membersearch1.cpp moc_membersignup.cpp moc_membersignup2.cpp moc_memberslist.cpp moc_newpasswd.cpp moc_prebook.cpp moc_returnbook.cpp moc_signup.cpp
 compiler_moc_header_clean:
-	-$(DEL_FILE) moc_addbook.cpp moc_addmember.cpp moc_authorslist.cpp moc_booklist.cpp moc_choosepage.cpp moc_deletebook.cpp moc_deletemember.cpp moc_digitallibrary.cpp moc_editbook.cpp moc_editmember.cpp moc_genrelist.cpp moc_issuebook.cpp moc_login.cpp moc_manageauthors.cpp moc_managebooks.cpp moc_memberevents.cpp moc_memberlibrary.cpp moc_memberlogin.cpp moc_memberprebook.cpp moc_memberprofile.cpp moc_membersearch1.cpp moc_membersignup.cpp moc_memberslist.cpp moc_newpasswd.cpp moc_prebook.cpp moc_returnbook.cpp moc_signup.cpp
+	-$(DEL_FILE) moc_addbook.cpp moc_addmember.cpp moc_authorslist.cpp moc_booklist.cpp moc_choosepage.cpp moc_deletebook.cpp moc_deletemember.cpp moc_digitallibrary.cpp moc_editbook.cpp moc_editmember.cpp moc_genrelist.cpp moc_issuebook.cpp moc_login.cpp moc_manageauthors.cpp moc_managebooks.cpp moc_memberedit.cpp moc_memberevents.cpp moc_memberlibrary.cpp moc_memberlogin.cpp moc_memberprebook.cpp moc_memberprofile.cpp moc_membersearch1.cpp moc_membersignup.cpp moc_membersignup2.cpp moc_memberslist.cpp moc_newpasswd.cpp moc_prebook.cpp moc_returnbook.cpp moc_signup.cpp
 moc_addbook.cpp: ../Library/addbook.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -1005,6 +1019,12 @@ moc_managebooks.cpp: ../Library/managebooks.h \
 		/Users/briartait/Qt/6.3.2/macos/libexec/moc
 	/Users/briartait/Qt/6.3.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -I/Users/briartait/Documents/GitHub_Projects/CS106-LibraryManagementSystem/Library-Management-System-/library/Library -I/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/briartait/Qt/6.3.2/macos/lib ../Library/managebooks.h -o moc_managebooks.cpp
 
+moc_memberedit.cpp: ../Library/memberedit.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		/Users/briartait/Qt/6.3.2/macos/libexec/moc
+	/Users/briartait/Qt/6.3.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -I/Users/briartait/Documents/GitHub_Projects/CS106-LibraryManagementSystem/Library-Management-System-/library/Library -I/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/briartait/Qt/6.3.2/macos/lib ../Library/memberedit.h -o moc_memberedit.cpp
+
 moc_memberevents.cpp: ../Library/memberevents.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -1068,6 +1088,12 @@ moc_membersignup.cpp: ../Library/membersignup.h \
 		/Users/briartait/Qt/6.3.2/macos/libexec/moc
 	/Users/briartait/Qt/6.3.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -I/Users/briartait/Documents/GitHub_Projects/CS106-LibraryManagementSystem/Library-Management-System-/library/Library -I/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/briartait/Qt/6.3.2/macos/lib ../Library/membersignup.h -o moc_membersignup.cpp
 
+moc_membersignup2.cpp: ../Library/membersignup2.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		/Users/briartait/Qt/6.3.2/macos/libexec/moc
+	/Users/briartait/Qt/6.3.2/macos/libexec/moc $(DEFINES) -D__APPLE__ -D__GNUC__=4 -D__APPLE_CC__ -D__cplusplus=199711L -D__APPLE_CC__=6000 -D__clang__ -D__clang_major__=13 -D__clang_minor__=1 -D__clang_patchlevel__=6 -D__GNUC__=4 -D__GNUC_MINOR__=2 -D__GNUC_PATCHLEVEL__=1 -I/Users/briartait/Qt/6.3.2/macos/mkspecs/macx-clang -I/Users/briartait/Documents/GitHub_Projects/CS106-LibraryManagementSystem/Library-Management-System-/library/Library -I/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers -I/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers -I. -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include/c++/v1 -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/13.1.6/include -I/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.3.sdk/usr/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -F/Users/briartait/Qt/6.3.2/macos/lib ../Library/membersignup2.h -o moc_membersignup2.cpp
+
 moc_memberslist.cpp: ../Library/memberslist.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -1106,9 +1132,9 @@ compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
 compiler_moc_source_make_all:
 compiler_moc_source_clean:
-compiler_uic_make_all: ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h
+compiler_uic_make_all: ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberedit.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_membersignup2.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h
 compiler_uic_clean:
-	-$(DEL_FILE) ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h
+	-$(DEL_FILE) ui_addbook.h ui_addmember.h ui_authorslist.h ui_booklist.h ui_choosepage.h ui_deletebook.h ui_deletemember.h ui_digitallibrary.h ui_editbook.h ui_editmember.h ui_genrelist.h ui_issuebook.h ui_login.h ui_manageauthors.h ui_managebooks.h ui_memberedit.h ui_memberevents.h ui_memberlibrary.h ui_memberlogin.h ui_memberprebook.h ui_memberprofile.h ui_membersearch1.h ui_membersignup.h ui_membersignup2.h ui_memberslist.h ui_newpasswd.h ui_prebook.h ui_returnbook.h ui_signup.h
 ui_addbook.h: ../Library/addbook.ui \
 		/Users/briartait/Qt/6.3.2/macos/libexec/uic
 	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/addbook.ui -o ui_addbook.h
@@ -1169,6 +1195,10 @@ ui_managebooks.h: ../Library/managebooks.ui \
 		/Users/briartait/Qt/6.3.2/macos/libexec/uic
 	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/managebooks.ui -o ui_managebooks.h
 
+ui_memberedit.h: ../Library/memberedit.ui \
+		/Users/briartait/Qt/6.3.2/macos/libexec/uic
+	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/memberedit.ui -o ui_memberedit.h
+
 ui_memberevents.h: ../Library/memberevents.ui \
 		/Users/briartait/Qt/6.3.2/macos/libexec/uic
 	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/memberevents.ui -o ui_memberevents.h
@@ -1196,6 +1226,10 @@ ui_membersearch1.h: ../Library/membersearch1.ui \
 ui_membersignup.h: ../Library/membersignup.ui \
 		/Users/briartait/Qt/6.3.2/macos/libexec/uic
 	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/membersignup.ui -o ui_membersignup.h
+
+ui_membersignup2.h: ../Library/membersignup2.ui \
+		/Users/briartait/Qt/6.3.2/macos/libexec/uic
+	/Users/briartait/Qt/6.3.2/macos/libexec/uic ../Library/membersignup2.ui -o ui_membersignup2.h
 
 ui_memberslist.h: ../Library/memberslist.ui \
 		/Users/briartait/Qt/6.3.2/macos/libexec/uic
@@ -1573,6 +1607,33 @@ managebooks.o: ../Library/managebooks.cpp ../Library/managebooks.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdebug.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o managebooks.o ../Library/managebooks.cpp
 
+memberedit.o: ../Library/memberedit.cpp ../Library/memberedit.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_memberedit.h \
+		../Library/digitallibrary.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlQuery \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlquery.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlQueryModel \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlquerymodel.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QDir \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdir.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlRecord \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlrecord.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlField \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlfield.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QTableView \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qtableview.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QRegularExpression \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qregularexpression.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/QRegularExpressionValidator \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/qvalidator.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QDebug \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdebug.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o memberedit.o ../Library/memberedit.cpp
+
 memberevents.o: ../Library/memberevents.cpp ../Library/memberevents.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
@@ -1613,7 +1674,8 @@ memberlibrary.o: ../Library/memberlibrary.cpp ../Library/memberlibrary.h \
 		../Library/membersearch1.h \
 		../Library/digitallibrary.h \
 		../Library/memberprebook.h \
-		../Library/memberprofile.h
+		../Library/memberprofile.h \
+		../Library/memberedit.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o memberlibrary.o ../Library/memberlibrary.cpp
 
 memberlogin.o: ../Library/memberlogin.cpp ../Library/memberlogin.h \
@@ -1651,7 +1713,8 @@ memberlogin.o: ../Library/memberlogin.cpp ../Library/memberlogin.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QDir \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdir.h \
 		../Library/membersignup.h \
-		../Library/digitallibrary.h
+		../Library/digitallibrary.h \
+		../Library/newpasswd.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o memberlogin.o ../Library/memberlogin.cpp
 
 memberprebook.o: ../Library/memberprebook.cpp ../Library/memberprebook.h \
@@ -1731,8 +1794,31 @@ membersignup.o: ../Library/membersignup.cpp ../Library/membersignup.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/QRegularExpressionValidator \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/qvalidator.h \
 		../Library/digitallibrary.h \
-		../Library/addmember.h
+		../Library/addmember.h \
+		../Library/membersignup2.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o membersignup.o ../Library/membersignup.cpp
+
+membersignup2.o: ../Library/membersignup2.cpp ../Library/membersignup2.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qdialog.h \
+		ui_membersignup2.h \
+		../Library/digitallibrary.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlQuery \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlquery.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/QSqlQueryModel \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtSql.framework/Headers/qsqlquerymodel.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QDir \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdir.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QMessageBox \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/qmessagebox.h \
+		../Library/login.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QDebug \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qdebug.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/QRegularExpression \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtCore.framework/Headers/qregularexpression.h \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/QRegularExpressionValidator \
+		/Users/briartait/Qt/6.3.2/macos/lib/QtGui.framework/Headers/qvalidator.h
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o membersignup2.o ../Library/membersignup2.cpp
 
 memberslist.o: ../Library/memberslist.cpp ../Library/memberslist.h \
 		/Users/briartait/Qt/6.3.2/macos/lib/QtWidgets.framework/Headers/QDialog \
@@ -1882,6 +1968,9 @@ moc_manageauthors.o: moc_manageauthors.cpp
 moc_managebooks.o: moc_managebooks.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_managebooks.o moc_managebooks.cpp
 
+moc_memberedit.o: moc_memberedit.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_memberedit.o moc_memberedit.cpp
+
 moc_memberevents.o: moc_memberevents.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_memberevents.o moc_memberevents.cpp
 
@@ -1902,6 +1991,9 @@ moc_membersearch1.o: moc_membersearch1.cpp
 
 moc_membersignup.o: moc_membersignup.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_membersignup.o moc_membersignup.cpp
+
+moc_membersignup2.o: moc_membersignup2.cpp 
+	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_membersignup2.o moc_membersignup2.cpp
 
 moc_memberslist.o: moc_memberslist.cpp 
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o moc_memberslist.o moc_memberslist.cpp

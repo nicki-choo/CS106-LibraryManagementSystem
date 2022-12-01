@@ -9,6 +9,7 @@
 #include "digitallibrary.h"
 #include "memberprebook.h"
 #include "memberprofile.h"
+#include "memberedit.h"
 
 memberlibrary::memberlibrary(QWidget *parent) :
     QDialog(parent),
@@ -35,8 +36,8 @@ void memberlibrary::connectDB()
 
     //Create a table named accounts
     QString accountTable{"CREATE TABLE IF NOT EXISTS accounts"
-                         "(username_2 VARCHAR(20), name VARCHAR(20),"
-                         "password_2 VARCHAR(20))"};
+                         "firstName VARCHAR(20), lastName VARCHAR(20), (username VARCHAR(20),"
+                         "password VARCHAR(20))"};
 
     if(!query.exec(accountTable))
         QMessageBox::critical(this,"Info","Cannot create accounts");
@@ -56,7 +57,7 @@ void memberlibrary::connectDB()
 
     //Create a table named members
     QString memberTable{"CREATE TABLE IF NOT EXISTS members"
-                      "(ID INTEGER PRIMARY KEY, firstName VARCHAR(20), lastName VARCHAR(20),"
+                      "(ID INTEGER PRIMARY KEY, firstName VARCHAR(20), lastName VARCHAR(20), Username VARCHAR(20),"
                        "phone VARCHAR(20), email VARCHAR(40), gender VARCHAR(10))"};
     if(!query.exec(memberTable))
         QMessageBox::critical(this,"Info","Cannot create members Table");
@@ -78,6 +79,10 @@ void memberlibrary::connectDB()
         QMessageBox::critical(this,"Info","Cannot create bookStatus Table");
 }
 
+void memberlibrary::setUsername(QString username)
+{
+    ui->username->setText(username);
+}
 memberlibrary::~memberlibrary()
 {
     delete ui;
@@ -109,5 +114,20 @@ void memberlibrary::on_viewProfile_clicked()
 {
     memberprofile memberprofile;
     memberprofile.exec();
+}
+
+
+void memberlibrary::on_logoutbutton_clicked()
+{
+    this->hide();
+    memberlogin memberlogin;
+    memberlogin.exec();
+}
+
+
+void memberlibrary::on_editProfile_clicked()
+{
+    memberedit memberedit;
+    memberedit.exec();
 }
 

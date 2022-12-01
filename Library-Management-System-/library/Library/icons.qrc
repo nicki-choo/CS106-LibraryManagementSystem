@@ -35,5 +35,7 @@
         <file>../../../../../../Desktop/MemResource/romance.png</file>
         <file>../../../../../../Desktop/MemResource/scifi.png</file>
         <file>../../../../../../Desktop/MemResource/thriller.png</file>
+        <file>../../../../../../Desktop/MemResource/adminimg.png</file>
+        <file>../../../../../../Desktop/MemResource/memberimg.png</file>
     </qresource>
 </RCC>

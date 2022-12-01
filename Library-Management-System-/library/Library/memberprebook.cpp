@@ -98,8 +98,8 @@ delete ui;
  void memberprebook::on_SearchMemberBtn_clicked()
  {
      //Get the ID
-     QString memberID = ui->MemberIDLine->text();
-     QString memberName;
+     // QString memberID = ui->MemberIDLine->text();
+     QString memberName = ui->MemberIDLine->text();
 
      //call the main Database
      digitalLibrary lib;
@@ -108,7 +108,7 @@ delete ui;
      //search the member
      auto query = QSqlQuery(db);
      QString searchMember{"SELECT * FROM members WHERE ID = '%1'"};
-     if(!query.exec(searchMember.arg(memberID)))
+     if(!query.exec(searchMember.arg(memberName)))
          qDebug() << "Cannot select from  members";
 
      int count = 0;

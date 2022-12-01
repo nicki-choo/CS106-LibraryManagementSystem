@@ -19,6 +19,7 @@
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
 #include <QtWidgets/QPushButton>
+#include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -28,25 +29,24 @@ class Ui_membersignup
 public:
     QGroupBox *groupBox;
     QPushButton *createButton;
-    QLineEdit *phone;
     QCheckBox *checkBox;
-    QLineEdit *email;
-    QLabel *label_6;
-    QLabel *label_7;
-    QLineEdit *password;
-    QLabel *label_5;
     QPushButton *backButton;
-    QLineEdit *username;
-    QLabel *label;
-    QLineEdit *lastName;
-    QLineEdit *firstName;
     QComboBox *gender_2;
     QLabel *label_12;
-    QLabel *label_2;
-    QLabel *label_3;
-    QLabel *label_9;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout_3;
+    QVBoxLayout *verticalLayout_2;
     QLabel *label_4;
     QLabel *label_11;
+    QLabel *label_5;
+    QLabel *label_7;
+    QVBoxLayout *verticalLayout;
+    QLineEdit *firstName;
+    QLineEdit *lastName;
+    QLineEdit *email;
+    QLineEdit *phone;
+    QLabel *label_3;
+    QLabel *label_9;
     QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QWidget *layoutWidget1;
@@ -96,59 +96,9 @@ public:
 "              font-size: 19px;\n"
 "              transition: 0.9s; \n"
 "}"));
-        phone = new QLineEdit(groupBox);
-        phone->setObjectName(QString::fromUtf8("phone"));
-        phone->setGeometry(QRect(112, 214, 294, 26));
-        phone->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
         checkBox = new QCheckBox(groupBox);
         checkBox->setObjectName(QString::fromUtf8("checkBox"));
         checkBox->setGeometry(QRect(70, 300, 294, 27));
-        email = new QLineEdit(groupBox);
-        email->setObjectName(QString::fromUtf8("email"));
-        email->setGeometry(QRect(112, 178, 294, 26));
-        email->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-        label_6 = new QLabel(groupBox);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
-        label_6->setGeometry(QRect(15, 142, 79, 22));
-        label_6->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
-"font-color: #2A3540;\n"
-"background-color: none;"));
-        label_7 = new QLabel(groupBox);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
-        label_7->setGeometry(QRect(15, 214, 54, 22));
-        label_7->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
-"font-color: #2A3540;\n"
-"background-color: none;"));
-        password = new QLineEdit(groupBox);
-        password->setObjectName(QString::fromUtf8("password"));
-        password->setGeometry(QRect(112, 142, 294, 26));
-        password->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-        password->setInputMethodHints(Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData);
-        password->setEchoMode(QLineEdit::Password);
-        label_5 = new QLabel(groupBox);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
-        label_5->setGeometry(QRect(15, 178, 44, 22));
-        label_5->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
-"font-color: #2A3540;\n"
-"background-color: none;"));
         backButton = new QPushButton(groupBox);
         backButton->setObjectName(QString::fromUtf8("backButton"));
         backButton->setGeometry(QRect(214, 359, 192, 35));
@@ -181,42 +131,6 @@ public:
 "              font-size: 19px;\n"
 "              transition: 0.9s; \n"
 "}"));
-        username = new QLineEdit(groupBox);
-        username->setObjectName(QString::fromUtf8("username"));
-        username->setGeometry(QRect(112, 106, 294, 26));
-        username->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-        label = new QLabel(groupBox);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(15, 106, 83, 22));
-        label->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
-"font-color: #2A3540;\n"
-"background-color: none;"));
-        lastName = new QLineEdit(groupBox);
-        lastName->setObjectName(QString::fromUtf8("lastName"));
-        lastName->setGeometry(QRect(112, 70, 291, 26));
-        lastName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
-        firstName = new QLineEdit(groupBox);
-        firstName->setObjectName(QString::fromUtf8("firstName"));
-        firstName->setGeometry(QRect(112, 33, 291, 27));
-        firstName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
-"	background-color: rgb(255, 255, 255);\n"
-"	 border: 1px  solid;\n"
-"     border-radius: 4px;\n"
-"	border-color: #001873;\n"
-"	font: 20pt \"Work Sans\";\n"
-"}"));
         gender_2 = new QComboBox(groupBox);
         gender_2->addItem(QString());
         gender_2->addItem(QString());
@@ -237,33 +151,113 @@ public:
 "}"));
         label_12 = new QLabel(groupBox);
         label_12->setObjectName(QString::fromUtf8("label_12"));
-        label_12->setGeometry(QRect(13, 250, 60, 22));
+        label_12->setGeometry(QRect(10, 250, 87, 22));
         label_12->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
 "color:#2A3540;"));
-        label_2 = new QLabel(membersignup);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
-        label_2->setGeometry(QRect(250, 20, 211, 211));
-        label_2->setPixmap(QPixmap(QString::fromUtf8(":/MemResource/Group 42.png")));
-        label_3 = new QLabel(membersignup);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
-        label_3->setGeometry(QRect(30, 70, 211, 221));
-        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/Group 42.png")));
-        label_9 = new QLabel(membersignup);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
-        label_9->setGeometry(QRect(270, 0, 531, 451));
-        label_9->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
-        label_4 = new QLabel(membersignup);
+        widget = new QWidget(groupBox);
+        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setGeometry(QRect(10, 60, 391, 146));
+        horizontalLayout_3 = new QHBoxLayout(widget);
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setContentsMargins(0, 0, 0, 0);
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_4 = new QLabel(widget);
         label_4->setObjectName(QString::fromUtf8("label_4"));
-        label_4->setGeometry(QRect(360, 60, 88, 20));
         label_4->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
 "font-color: #2A3540;\n"
 "background-color: none;"));
-        label_11 = new QLabel(membersignup);
+
+        verticalLayout_2->addWidget(label_4);
+
+        label_11 = new QLabel(widget);
         label_11->setObjectName(QString::fromUtf8("label_11"));
-        label_11->setGeometry(QRect(360, 90, 88, 22));
         label_11->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
 "font-color: #2A3540;\n"
 "background-color: none;"));
+
+        verticalLayout_2->addWidget(label_11);
+
+        label_5 = new QLabel(widget);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
+"font-color: #2A3540;\n"
+"background-color: none;"));
+
+        verticalLayout_2->addWidget(label_5);
+
+        label_7 = new QLabel(widget);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setStyleSheet(QString::fromUtf8("font: 600 18pt \"Work Sans\";\n"
+"font-color: #2A3540;\n"
+"background-color: none;"));
+
+        verticalLayout_2->addWidget(label_7);
+
+
+        horizontalLayout_3->addLayout(verticalLayout_2);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        firstName = new QLineEdit(widget);
+        firstName->setObjectName(QString::fromUtf8("firstName"));
+        firstName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+
+        verticalLayout->addWidget(firstName);
+
+        lastName = new QLineEdit(widget);
+        lastName->setObjectName(QString::fromUtf8("lastName"));
+        lastName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+
+        verticalLayout->addWidget(lastName);
+
+        email = new QLineEdit(widget);
+        email->setObjectName(QString::fromUtf8("email"));
+        email->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+
+        verticalLayout->addWidget(email);
+
+        phone = new QLineEdit(widget);
+        phone->setObjectName(QString::fromUtf8("phone"));
+        phone->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt \"Work Sans\";\n"
+"}"));
+
+        verticalLayout->addWidget(phone);
+
+
+        horizontalLayout_3->addLayout(verticalLayout);
+
+        label_3 = new QLabel(membersignup);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(70, 120, 211, 231));
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/Group 42.png")));
+        label_9 = new QLabel(membersignup);
+        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setGeometry(QRect(330, 0, 471, 451));
+        label_9->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
         layoutWidget = new QWidget(membersignup);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
         layoutWidget->setGeometry(QRect(0, 0, 2, 2));
@@ -276,14 +270,11 @@ public:
         horizontalLayout_2 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
         horizontalLayout_2->setContentsMargins(0, 0, 0, 0);
-        layoutWidget->raise();
-        layoutWidget->raise();
+        layoutWidget1->raise();
+        layoutWidget1->raise();
         label_9->raise();
         groupBox->raise();
-        label_2->raise();
         label_3->raise();
-        label_4->raise();
-        label_11->raise();
 
         retranslateUi(membersignup);
 
@@ -295,22 +286,18 @@ public:
         membersignup->setWindowTitle(QCoreApplication::translate("membersignup", "Dialog", nullptr));
         groupBox->setTitle(QCoreApplication::translate("membersignup", "Sign Up", nullptr));
         createButton->setText(QCoreApplication::translate("membersignup", "Create", nullptr));
-        checkBox->setText(QCoreApplication::translate("membersignup", "Allow Notifications", nullptr));
-        label_6->setText(QCoreApplication::translate("membersignup", "Password", nullptr));
-        label_7->setText(QCoreApplication::translate("membersignup", "Mobile", nullptr));
-        password->setText(QString());
-        label_5->setText(QCoreApplication::translate("membersignup", "Email", nullptr));
+        checkBox->setText(QCoreApplication::translate("membersignup", "Subscribe to Updates", nullptr));
         backButton->setText(QCoreApplication::translate("membersignup", "BACK TO LOGIN", nullptr));
-        label->setText(QCoreApplication::translate("membersignup", "Username", nullptr));
         gender_2->setItemText(0, QCoreApplication::translate("membersignup", "Male", nullptr));
         gender_2->setItemText(1, QCoreApplication::translate("membersignup", "Female", nullptr));
 
         label_12->setText(QCoreApplication::translate("membersignup", "Gender", nullptr));
-        label_2->setText(QString());
-        label_3->setText(QString());
-        label_9->setText(QString());
         label_4->setText(QCoreApplication::translate("membersignup", "First Name", nullptr));
         label_11->setText(QCoreApplication::translate("membersignup", "Last Name", nullptr));
+        label_5->setText(QCoreApplication::translate("membersignup", "Email", nullptr));
+        label_7->setText(QCoreApplication::translate("membersignup", "Mobile", nullptr));
+        label_3->setText(QString());
+        label_9->setText(QString());
     } // retranslateUi
 
 };

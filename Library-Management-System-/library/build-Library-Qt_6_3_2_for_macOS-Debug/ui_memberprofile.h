@@ -12,23 +12,18 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QDialog>
-#include <QtWidgets/QLabel>
 
 QT_BEGIN_NAMESPACE
 
 class Ui_memberprofile
 {
 public:
-    QLabel *label;
 
     void setupUi(QDialog *memberprofile)
     {
         if (memberprofile->objectName().isEmpty())
             memberprofile->setObjectName(QString::fromUtf8("memberprofile"));
         memberprofile->resize(640, 480);
-        label = new QLabel(memberprofile);
-        label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(170, 140, 211, 171));
 
         retranslateUi(memberprofile);
 
@@ -38,7 +33,6 @@ public:
     void retranslateUi(QDialog *memberprofile)
     {
         memberprofile->setWindowTitle(QCoreApplication::translate("memberprofile", "Dialog", nullptr));
-        label->setText(QCoreApplication::translate("memberprofile", "memberprofile", nullptr));
     } // retranslateUi
 
 };

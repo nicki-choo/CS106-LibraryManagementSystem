@@ -7,6 +7,7 @@
 #include <memberlibrary.h>
 #include <membersignup.h>
 #include <digitallibrary.h>
+#include <newpasswd.h>
 
 
 
@@ -23,6 +24,7 @@ memberlogin::~memberlogin()
 {
     delete ui;
 }
+
 
 void memberlogin::on_loginButton2_clicked()
 {
@@ -60,13 +62,14 @@ void memberlogin::on_loginButton2_clicked()
             }
             if(count == 1)
             {
-                // lib.setUsername(username);
+                lib.setUsername(username);
 
                 //Hide the current window
                 this->hide();
 
                 //show the mainwindow
-                lib.exec();
+                memberlibrary memberlibrary;
+                memberlibrary.exec();
             }
             else if(count < 1)
                 QMessageBox::warning(this, "Empty", "You are not registered!");
@@ -77,26 +80,75 @@ void memberlogin::on_loginButton2_clicked()
     else
         QMessageBox::warning(this, "Empty", "Fields are empty!");
 
+    /*
+    //call the main Database
+    memberlibrary memlib;
+    auto db = memlib.db;
 
+    //Get the username
+    QString username = ui->username->text();
 
+    //Get the password
+    QString password = ui->password->text();
+
+    //Check if the db is opened
+    if(!db.isOpen())
+    {
+        qDebug() << "Failed to open the database";
+    }
+
+    //Define the query
+    auto query = QSqlQuery(db);
+
+    if(!username.isEmpty() & !password.isEmpty())
+    {
+        //Create the body of the query
+        QString checkLogin = {"SELECT * FROM accounts WHERE username='"
+                              +username+"' AND password='"+password+"'"};
+
+        if(query.exec(checkLogin))
+        {
+            int count = 0;
+            while(query.next())
+            {
+                count++;
+            }
+            if(count == 1)
+            {
+                memlib.setUsername(username);
+
+                //Hide the current window
+                this->hide();
+
+                //show the mainwindow
+                memlib.exec();
+            }
+            else if(count < 1)
+                QMessageBox::warning(this, "Empty", "You are not registered!");
+        }
+        else
+            qDebug() << "cannot select from accounts";
+    }
+    else
+        QMessageBox::warning(this, "Empty", "Fields are empty!");
+        */
 }
 
-
-void memberlogin::on_forgetPasswdBtn2_clicked()
-{
-   /* this->hide();
-    newPasswd newpass;
-    newpass.exec(); */
-}
 
 
 void memberlogin::on_signUpButton2_clicked()
 {
     this->hide();
     membersignup membersignup;
-   membersignup.exec();
+    membersignup.exec();
 }
 
+void memberlogin::on_forgetPasswdBtn2_clicked()
+{
+    this->hide();
+    newPasswd newpass;
+    newpass.exec();
+}
 void memberlogin::setValidator2()
 {
     //regx for username
@@ -104,3 +156,11 @@ void memberlogin::setValidator2()
     QRegularExpressionValidator*valName = new QRegularExpressionValidator(rxName, this);
     ui->username->setValidator(valName);
 }
+
+
+
+
+
+
+
+

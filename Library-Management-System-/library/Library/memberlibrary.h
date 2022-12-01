@@ -24,11 +24,11 @@ public:
     QSqlDatabase db;
     void connectDB();
 
-    void setMemUsername(QString username_2);
-    /*void showBookNum();
+    void setUsername(QString username);
+    void showBookNum();
     void showMemberNum();
     void showAuthorNum();
-    void showCover();*/
+    void showCover();
 
 
 private slots:
@@ -42,13 +42,18 @@ private slots:
 
     void on_viewProfile_clicked();
 
+    void on_logoutbutton_clicked();
+
+    void on_editProfile_clicked();
+
 private:
-    /* Ui::memberlibrary *ui;
+    /*  Ui::memberlibrary *ui;
 
-    QString filename = QDir::homePath()+ "/librarymem.sql";
+    QString filename = QDir::homePath()+ "/librarymem.sql;";
 
-    QString username_2; */
-    Ui::memberlibrary *ui;
+    QString username; */
+
+     Ui::memberlibrary *ui;
 
     QString filename = QDir::homePath()+ "/libraryDB.sqlite";
 
