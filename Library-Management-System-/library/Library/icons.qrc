@@ -1,0 +1,39 @@
+<RCC>
+    <qresource prefix="/Icons">
+        <file>add member.png</file>
+        <file>Group 42.jpg</file>
+        <file>Group 82.png</file>
+        <file>school-class-library-with-books-svgrepo-com 1.png</file>
+        <file>three-books-svgrepo-com 1.png</file>
+        <file>writer-svgrepo-com 1.png</file>
+        <file>Group 6.png</file>
+        <file>Mercy.jpeg</file>
+        <file>Murder-on-the-Orient-Express.jpg</file>
+        <file>It novel.png</file>
+        <file>Confessions.jpg</file>
+        <file>EveningMorning.jpg</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>../../../../../../Desktop/MemResource/background.png</file>
+        <file>../../../../../../Desktop/MemResource/bookgenre.png</file>
+        <file>../../../../../../Desktop/MemResource/ebookgenre.png</file>
+        <file>../../../../../../Desktop/MemResource/Group 80.png</file>
+        <file>../../../../../../Desktop/MemResource/headerimg.png</file>
+        <file>../../../../../../Desktop/MemResource/magagenre.png</file>
+        <file>../../../../../../Desktop/MemResource/maggenre.png</file>
+        <file>../../../../../../Desktop/MemResource/Rectangle 19.png</file>
+        <file>../../../../../../Desktop/MemResource/ search.png</file>
+        <file>../../../../../../Desktop/MemResource/Books.png</file>
+        <file>../../../../../../Desktop/MemResource/Ellipse 19.png</file>
+        <file>../../../../../../Desktop/MemResource/Group 42.png</file>
+        <file>../../../../../../Desktop/MemResource/Group 79.png</file>
+        <file>../../../../../../Desktop/MemResource/libimg2.png</file>
+        <file>../../../../../../Desktop/MemResource/Rectangle 6.png</file>
+        <file>../../../../../../Desktop/MemResource/Rectangle 21.png</file>
+        <file>../../../../../../Desktop/MemResource/download.jpeg</file>
+        <file>../../../../../../Desktop/MemResource/eventsimg2.jpeg</file>
+        <file>../../../../../../Desktop/MemResource/romance.png</file>
+        <file>../../../../../../Desktop/MemResource/scifi.png</file>
+        <file>../../../../../../Desktop/MemResource/thriller.png</file>
+    </qresource>
+</RCC>

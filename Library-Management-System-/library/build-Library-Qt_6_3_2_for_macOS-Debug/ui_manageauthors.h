@@ -1,0 +1,351 @@
+/********************************************************************************
+** Form generated from reading UI file 'manageauthors.ui'
+**
+** Created by: Qt User Interface Compiler version 6.3.2
+**
+** WARNING! All changes made in this file will be lost when recompiling UI file!
+********************************************************************************/
+
+#ifndef UI_MANAGEAUTHORS_H
+#define UI_MANAGEAUTHORS_H
+
+#include <QtCore/QVariant>
+#include <QtWidgets/QApplication>
+#include <QtWidgets/QDialog>
+#include <QtWidgets/QFrame>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QHeaderView>
+#include <QtWidgets/QLabel>
+#include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QSpacerItem>
+#include <QtWidgets/QTableView>
+#include <QtWidgets/QTextEdit>
+#include <QtWidgets/QVBoxLayout>
+
+QT_BEGIN_NAMESPACE
+
+class Ui_ManageAuthors
+{
+public:
+    QHBoxLayout *horizontalLayout_5;
+    QFrame *frame;
+    QHBoxLayout *horizontalLayout_4;
+    QHBoxLayout *horizontalLayout_3;
+    QVBoxLayout *verticalLayout_6;
+    QVBoxLayout *verticalLayout_2;
+    QLabel *label_2;
+    QLineEdit *ID;
+    QVBoxLayout *verticalLayout_3;
+    QLabel *label_3;
+    QLineEdit *firstName;
+    QVBoxLayout *verticalLayout_4;
+    QLabel *label_4;
+    QLineEdit *lastName;
+    QVBoxLayout *verticalLayout_5;
+    QLabel *label_5;
+    QLineEdit *expertise;
+    QVBoxLayout *verticalLayout;
+    QLabel *label_6;
+    QTextEdit *about;
+    QHBoxLayout *horizontalLayout_2;
+    QSpacerItem *horizontalSpacer;
+    QHBoxLayout *horizontalLayout;
+    QPushButton *addButtton;
+    QPushButton *editButton;
+    QPushButton *deleteButton;
+    QSpacerItem *horizontalSpacer_2;
+    QTableView *authorTableView;
+
+    void setupUi(QDialog *ManageAuthors)
+    {
+        if (ManageAuthors->objectName().isEmpty())
+            ManageAuthors->setObjectName(QString::fromUtf8("ManageAuthors"));
+        ManageAuthors->resize(992, 602);
+        ManageAuthors->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
+        horizontalLayout_5 = new QHBoxLayout(ManageAuthors);
+        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        frame = new QFrame(ManageAuthors);
+        frame->setObjectName(QString::fromUtf8("frame"));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_4 = new QHBoxLayout(frame);
+        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        verticalLayout_6 = new QVBoxLayout();
+        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        label_2 = new QLabel(frame);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setStyleSheet(QString::fromUtf8("font: 500 13pt \"Work Sans\";\n"
+"color: #2A3540;"));
+
+        verticalLayout_2->addWidget(label_2);
+
+        ID = new QLineEdit(frame);
+        ID->setObjectName(QString::fromUtf8("ID"));
+        QFont font;
+        font.setPointSize(20);
+        font.setBold(false);
+        font.setItalic(false);
+        ID->setFont(font);
+        ID->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: #FFFFFF;\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt;\n"
+"	\n"
+"}"));
+
+        verticalLayout_2->addWidget(ID);
+
+
+        verticalLayout_6->addLayout(verticalLayout_2);
+
+        verticalLayout_3 = new QVBoxLayout();
+        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        label_3 = new QLabel(frame);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setStyleSheet(QString::fromUtf8("font: 500 13pt \"Work Sans\";\n"
+"color: #2A3540;"));
+
+        verticalLayout_3->addWidget(label_3);
+
+        firstName = new QLineEdit(frame);
+        firstName->setObjectName(QString::fromUtf8("firstName"));
+        firstName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: #FFFFFF;\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt;\n"
+"	\n"
+"}"));
+
+        verticalLayout_3->addWidget(firstName);
+
+
+        verticalLayout_6->addLayout(verticalLayout_3);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        label_4 = new QLabel(frame);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setStyleSheet(QString::fromUtf8("font: 500 13pt \"Work Sans\";\n"
+"color: #2A3540;"));
+
+        verticalLayout_4->addWidget(label_4);
+
+        lastName = new QLineEdit(frame);
+        lastName->setObjectName(QString::fromUtf8("lastName"));
+        lastName->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"	background-color: #FFFFFF;\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt;\n"
+"	\n"
+"}"));
+
+        verticalLayout_4->addWidget(lastName);
+
+
+        verticalLayout_6->addLayout(verticalLayout_4);
+
+        verticalLayout_5 = new QVBoxLayout();
+        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        label_5 = new QLabel(frame);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setStyleSheet(QString::fromUtf8("font: 500 13pt \"Work Sans\";\n"
+"color: #2A3540;"));
+
+        verticalLayout_5->addWidget(label_5);
+
+        expertise = new QLineEdit(frame);
+        expertise->setObjectName(QString::fromUtf8("expertise"));
+        expertise->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
+"background-color: #FFFFFF;\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 20pt;\n"
+"	\n"
+"}"));
+
+        verticalLayout_5->addWidget(expertise);
+
+
+        verticalLayout_6->addLayout(verticalLayout_5);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        label_6 = new QLabel(frame);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setStyleSheet(QString::fromUtf8("font: 500 13pt \"Work Sans\";\n"
+"color: #2A3540;"));
+
+        verticalLayout->addWidget(label_6);
+
+        about = new QTextEdit(frame);
+        about->setObjectName(QString::fromUtf8("about"));
+        about->setStyleSheet(QString::fromUtf8("QTextEdit{\n"
+"	background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 18pt \"Work Sans\";\n"
+"font-color: #2A3540\n"
+"}"));
+
+        verticalLayout->addWidget(about);
+
+
+        verticalLayout_6->addLayout(verticalLayout);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalSpacer = new QSpacerItem(78, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer);
+
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        addButtton = new QPushButton(frame);
+        addButtton->setObjectName(QString::fromUtf8("addButtton"));
+        addButtton->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{ \n"
+"	color: #2A3540;\n"
+"font: 600 14pt \"Work Sans\";\n"
+"border-radius:8px;\n"
+"padding : 3px;\n"
+"background: #FFFFFF;\n"
+"border-width: 1px;\n"
+"border-style: solid;\n"
+"border-color: #001873;\n"
+"border-radius:10px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:hover:!pressed\n"
+"\n"
+"{\n"
+"background:#4f85e2;\n"
+"}\n"
+""));
+
+        horizontalLayout->addWidget(addButtton);
+
+        editButton = new QPushButton(frame);
+        editButton->setObjectName(QString::fromUtf8("editButton"));
+        editButton->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{ \n"
+"	color: #2A3540;\n"
+"font: 600 14pt \"Work Sans\";\n"
+"border-radius:8px;\n"
+"padding : 3px;\n"
+"background: #FFFFFF;\n"
+"border-width: 1px;\n"
+"border-style: solid;\n"
+"border-color: #001873;\n"
+"border-radius:10px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:hover:!pressed\n"
+"\n"
+"{\n"
+"background:#4f85e2;\n"
+"}\n"
+""));
+
+        horizontalLayout->addWidget(editButton);
+
+        deleteButton = new QPushButton(frame);
+        deleteButton->setObjectName(QString::fromUtf8("deleteButton"));
+        deleteButton->setStyleSheet(QString::fromUtf8("QPushButton\n"
+"{ \n"
+"	color: #2A3540;\n"
+"font: 600 14pt \"Work Sans\";\n"
+"border-radius:8px;\n"
+"padding : 3px;\n"
+"background: #FFFFFF;\n"
+"border-width: 1px;\n"
+"border-style: solid;\n"
+"border-color: #001873;\n"
+"border-radius:10px;\n"
+"}\n"
+"\n"
+"\n"
+"QPushButton:hover:!pressed\n"
+"\n"
+"{\n"
+"background:#4f85e2;\n"
+"}\n"
+""));
+
+        horizontalLayout->addWidget(deleteButton);
+
+
+        horizontalLayout_2->addLayout(horizontalLayout);
+
+        horizontalSpacer_2 = new QSpacerItem(98, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
+
+        horizontalLayout_2->addItem(horizontalSpacer_2);
+
+
+        verticalLayout_6->addLayout(horizontalLayout_2);
+
+
+        horizontalLayout_3->addLayout(verticalLayout_6);
+
+        authorTableView = new QTableView(frame);
+        authorTableView->setObjectName(QString::fromUtf8("authorTableView"));
+        authorTableView->setStyleSheet(QString::fromUtf8("QTableView {  background-color: rgb(255, 255, 255);\n"
+"	 border: 1px  solid;\n"
+"     border-radius: 4px;\n"
+"	border-color: #001873;\n"
+"	font: 18pt \"Work Sans\";\n"
+"font-color: #2A3540;}"));
+        authorTableView->setSelectionMode(QAbstractItemView::SingleSelection);
+        authorTableView->setSelectionBehavior(QAbstractItemView::SelectRows);
+        authorTableView->verticalHeader()->setVisible(false);
+
+        horizontalLayout_3->addWidget(authorTableView);
+
+
+        horizontalLayout_4->addLayout(horizontalLayout_3);
+
+
+        horizontalLayout_5->addWidget(frame);
+
+
+        retranslateUi(ManageAuthors);
+
+        QMetaObject::connectSlotsByName(ManageAuthors);
+    } // setupUi
+
+    void retranslateUi(QDialog *ManageAuthors)
+    {
+        ManageAuthors->setWindowTitle(QCoreApplication::translate("ManageAuthors", "Dialog", nullptr));
+        label_2->setText(QCoreApplication::translate("ManageAuthors", "ID", nullptr));
+        label_3->setText(QCoreApplication::translate("ManageAuthors", "First Name", nullptr));
+        label_4->setText(QCoreApplication::translate("ManageAuthors", "Last Name", nullptr));
+        label_5->setText(QCoreApplication::translate("ManageAuthors", "Expertise", nullptr));
+        label_6->setText(QCoreApplication::translate("ManageAuthors", "About", nullptr));
+        addButtton->setText(QCoreApplication::translate("ManageAuthors", "ADD", nullptr));
+        editButton->setText(QCoreApplication::translate("ManageAuthors", "EDIT ", nullptr));
+        deleteButton->setText(QCoreApplication::translate("ManageAuthors", "DELETE", nullptr));
+    } // retranslateUi
+
+};
+
+namespace Ui {
+    class ManageAuthors: public Ui_ManageAuthors {};
+} // namespace Ui
+
+QT_END_NAMESPACE
+
+#endif // UI_MANAGEAUTHORS_H

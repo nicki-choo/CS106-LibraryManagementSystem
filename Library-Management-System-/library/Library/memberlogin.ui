@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>memberlogin</class>
+ <widget class="QDialog" name="memberlogin">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>571</width>
+    <height>815</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>150</x>
+     <y>300</y>
+     <width>281</width>
+     <height>71</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Choose from our great selection of books!</string>
+   </property>
+  </widget>
+  <widget class="QGroupBox" name="loginGroup">
+   <property name="geometry">
+    <rect>
+     <x>50</x>
+     <y>380</y>
+     <width>471</width>
+     <height>381</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 600 24pt &quot;Work Sans&quot;;
+border-color: rgb(196, 178, 255);
+border-color: rgb(170, 0, 255);
+color: #2A3540</string>
+   </property>
+   <property name="title">
+    <string>Login</string>
+   </property>
+   <layout class="QGridLayout" name="gridLayout_2">
+    <item row="1" column="0">
+     <widget class="QLabel" name="label_6">
+      <property name="styleSheet">
+       <string notr="true">font: 600 18pt &quot;Work Sans&quot;;
+font-color: #2A3540;
+background-color: none;</string>
+      </property>
+      <property name="text">
+       <string>Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1" colspan="3">
+     <widget class="QLineEdit" name="password">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt &quot;Work Sans&quot;;
+}</string>
+      </property>
+      <property name="echoMode">
+       <enum>QLineEdit::Password</enum>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="label_7">
+      <property name="styleSheet">
+       <string notr="true">font: 600 18pt &quot;Work Sans&quot;;
+font-color: #2A3540;
+background-color: none;</string>
+      </property>
+      <property name="text">
+       <string>Username</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="2">
+     <widget class="QPushButton" name="forgetPasswdBtn2">
+      <property name="focusPolicy">
+       <enum>Qt::ClickFocus</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-radius:15px;
+padding : 0 4px;
+background: #FFFFFF;
+border-radius:10px;
+border-color: #001873;
+border-width: 3px;
+border-style: solid;
+color: #2A3540;
+font: 600 24pt &quot;Work Sans&quot;;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}</string>
+      </property>
+      <property name="text">
+       <string>Forgot Password</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="3">
+     <widget class="QLineEdit" name="username">
+      <property name="styleSheet">
+       <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt &quot;Work Sans&quot;;
+}</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="loginButton2">
+      <property name="mouseTracking">
+       <bool>true</bool>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-radius:15px;
+padding : 0 4px;
+background: #FFFFFF;
+border-radius:10px;
+border-color: #001873;
+border-width: 3px;
+border-style: solid;
+color: #2A3540;
+font: 600 24pt &quot;Work Sans&quot;;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+      </property>
+      <property name="text">
+       <string>Login</string>
+      </property>
+      <property name="autoDefault">
+       <bool>true</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="signUpButton2">
+      <property name="styleSheet">
+       <string notr="true">QPushButton{
+border-radius:15px;
+padding : 0 4px;
+background: #FFFFFF;
+border-radius:10px;
+border-color: #001873;
+border-width: 3px;
+border-style: solid;
+color: #2A3540;
+font: 600 24pt &quot;Work Sans&quot;;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+      </property>
+      <property name="text">
+       <string>Sign Up</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>140</x>
+     <y>10</y>
+     <width>281</width>
+     <height>301</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/Desktop/MemResource/libimg2.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>370</y>
+     <width>571</width>
+     <height>451</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/Desktop/MemResource/background.png</pixmap>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>loginGroup</zorder>
+  <zorder>label</zorder>
+ </widget>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
+ <connections/>
+</ui>

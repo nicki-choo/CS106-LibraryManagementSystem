@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ManageAuthors</class>
+ <widget class="QDialog" name="ManageAuthors">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>992</width>
+    <height>602</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout_5">
+   <item>
+    <widget class="QFrame" name="frame">
+     <property name="frameShape">
+      <enum>QFrame::StyledPanel</enum>
+     </property>
+     <property name="frameShadow">
+      <enum>QFrame::Raised</enum>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_3">
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout_6">
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="styleSheet">
+               <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+              </property>
+              <property name="text">
+               <string>ID</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="ID">
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <italic>false</italic>
+                <bold>false</bold>
+               </font>
+              </property>
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QLabel" name="label_3">
+              <property name="styleSheet">
+               <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+              </property>
+              <property name="text">
+               <string>First Name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="firstName">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_4">
+            <item>
+             <widget class="QLabel" name="label_4">
+              <property name="styleSheet">
+               <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+              </property>
+              <property name="text">
+               <string>Last Name</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="lastName">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_5">
+            <item>
+             <widget class="QLabel" name="label_5">
+              <property name="styleSheet">
+               <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+              </property>
+              <property name="text">
+               <string>Expertise</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLineEdit" name="expertise">
+              <property name="styleSheet">
+               <string notr="true">QLineEdit{
+background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+	
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <item>
+             <widget class="QLabel" name="label_6">
+              <property name="styleSheet">
+               <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+              </property>
+              <property name="text">
+               <string>About</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QTextEdit" name="about">
+              <property name="styleSheet">
+               <string notr="true">QTextEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 18pt &quot;Work Sans&quot;;
+font-color: #2A3540
+}</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+          <item>
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <item>
+             <spacer name="horizontalSpacer">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>78</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+            <item>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <item>
+               <widget class="QPushButton" name="addButtton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{ 
+	color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+
+
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>ADD</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="editButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{ 
+	color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+
+
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>EDIT </string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="deleteButton">
+                <property name="styleSheet">
+                 <string notr="true">QPushButton
+{ 
+	color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+
+
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+</string>
+                </property>
+                <property name="text">
+                 <string>DELETE</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </item>
+            <item>
+             <spacer name="horizontalSpacer_2">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+              <property name="sizeType">
+               <enum>QSizePolicy::Fixed</enum>
+              </property>
+              <property name="sizeHint" stdset="0">
+               <size>
+                <width>98</width>
+                <height>20</height>
+               </size>
+              </property>
+             </spacer>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QTableView" name="authorTableView">
+          <property name="styleSheet">
+           <string notr="true">QTableView {  background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 18pt &quot;Work Sans&quot;;
+font-color: #2A3540;}</string>
+          </property>
+          <property name="selectionMode">
+           <enum>QAbstractItemView::SingleSelection</enum>
+          </property>
+          <property name="selectionBehavior">
+           <enum>QAbstractItemView::SelectRows</enum>
+          </property>
+          <attribute name="verticalHeaderVisible">
+           <bool>false</bool>
+          </attribute>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
