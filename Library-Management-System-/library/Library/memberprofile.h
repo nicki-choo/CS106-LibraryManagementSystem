@@ -15,6 +15,9 @@ public:
     explicit memberprofile(QWidget *parent = nullptr);
     ~memberprofile();
 
+private slots:
+    void showInfo();
+
 private:
     Ui::memberprofile *ui;
 };

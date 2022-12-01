@@ -65,11 +65,13 @@ public:
     QSpacerItem *horizontalSpacer_10;
     QPushButton *prebook1;
     QLabel *label;
-    QLabel *username;
+    QLabel *usernameTITLE;
     QLabel *label_10;
     QLabel *label_15;
     QLabel *label_3;
     QPushButton *logoutbutton;
+    QLabel *IDTITLE;
+    QLabel *useridheader;
 
     void setupUi(QDialog *memberlibrary)
     {
@@ -84,7 +86,7 @@ public:
         frame_4->setFrameShadow(QFrame::Raised);
         frame_3 = new QFrame(frame_4);
         frame_3->setObjectName(QString::fromUtf8("frame_3"));
-        frame_3->setGeometry(QRect(360, 190, 401, 631));
+        frame_3->setGeometry(QRect(360, 280, 421, 541));
         frame_3->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);\n"
 ""));
         frame_3->setFrameShape(QFrame::StyledPanel);
@@ -373,10 +375,10 @@ public:
         label->setStyleSheet(QString::fromUtf8("font: 700 40pt \"Work Sans\";\n"
 "color:#2A3540;\n"
 ""));
-        username = new QLabel(frame_4);
-        username->setObjectName(QString::fromUtf8("username"));
-        username->setGeometry(QRect(170, 100, 383, 65));
-        username->setStyleSheet(QString::fromUtf8("font: 600 35pt \"Work Sans\";\n"
+        usernameTITLE = new QLabel(frame_4);
+        usernameTITLE->setObjectName(QString::fromUtf8("usernameTITLE"));
+        usernameTITLE->setGeometry(QRect(170, 100, 211, 65));
+        usernameTITLE->setStyleSheet(QString::fromUtf8("font: 600 35pt \"Work Sans\";\n"
 "color:#2A3540;\n"
 ""));
         label_10 = new QLabel(frame_4);
@@ -395,14 +397,28 @@ public:
         logoutbutton = new QPushButton(frame_4);
         logoutbutton->setObjectName(QString::fromUtf8("logoutbutton"));
         logoutbutton->setGeometry(QRect(650, 20, 100, 32));
+        IDTITLE = new QLabel(frame_4);
+        IDTITLE->setObjectName(QString::fromUtf8("IDTITLE"));
+        IDTITLE->setGeometry(QRect(520, 200, 91, 71));
+        IDTITLE->setStyleSheet(QString::fromUtf8("font: 600 35pt \"Work Sans\";\n"
+"color:#2A3540;\n"
+""));
+        useridheader = new QLabel(frame_4);
+        useridheader->setObjectName(QString::fromUtf8("useridheader"));
+        useridheader->setGeometry(QRect(360, 200, 151, 73));
+        useridheader->setStyleSheet(QString::fromUtf8("font: 700 40pt \"Work Sans\";\n"
+"color:#2A3540;\n"
+""));
         label_3->raise();
         frame_3->raise();
         frame->raise();
         label->raise();
-        username->raise();
+        usernameTITLE->raise();
         label_10->raise();
         label_15->raise();
         logoutbutton->raise();
+        IDTITLE->raise();
+        useridheader->raise();
 
         retranslateUi(memberlibrary);
 
@@ -441,13 +457,15 @@ public:
         searchBook->setText(QCoreApplication::translate("memberlibrary", "Search", nullptr));
         prebook1->setText(QCoreApplication::translate("memberlibrary", "Prebook", nullptr));
         label->setText(QCoreApplication::translate("memberlibrary", "Kia Ora, ", nullptr));
-        username->setText(QCoreApplication::translate("memberlibrary", "[+username]", nullptr));
+        usernameTITLE->setText(QCoreApplication::translate("memberlibrary", "[+username]", nullptr));
         label_10->setText(QCoreApplication::translate("memberlibrary", "Contact us:\n"
 "03 3334445\n"
 "bookkeeper@library.co.nz", nullptr));
         label_15->setText(QString());
         label_3->setText(QString());
         logoutbutton->setText(QCoreApplication::translate("memberlibrary", "LOGOUT", nullptr));
+        IDTITLE->setText(QCoreApplication::translate("memberlibrary", "[+ID]", nullptr));
+        useridheader->setText(QCoreApplication::translate("memberlibrary", "User ID:", nullptr));
     } // retranslateUi
 
 };

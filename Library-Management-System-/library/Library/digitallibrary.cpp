@@ -299,9 +299,18 @@ void digitalLibrary::showCover(){
     }
 }
 
+/*
+  //Create a table named accounts
+QString accountTable{"CREATE TABLE IF NOT EXISTS accounts"
+                     "(username VARCHAR(20), name VARCHAR(20),"
+                     "password VARCHAR(20))"};
 
-
-
+QString memberTable{"CREATE TABLE IF NOT EXISTS members"
+                  "(ID INTEGER PRIMARY KEY, firstName VARCHAR(20), lastName VARCHAR(20),"
+                   "phone VARCHAR(20), email VARCHAR(40), gender VARCHAR(10))"};
+if(!query.exec(memberTable))
+    QMessageBox::critical(this,"Info","Cannot create members Table");
+*/
 
 
 

@@ -12,3 +12,9 @@ memberprofile::~memberprofile()
 {
     delete ui;
 }
+
+void memberprofile::showInfo()
+{
+
+}
+

@@ -35,9 +35,9 @@
     <property name="geometry">
      <rect>
       <x>360</x>
-      <y>190</y>
-      <width>401</width>
-      <height>631</height>
+      <y>280</y>
+      <width>421</width>
+      <height>541</height>
      </rect>
     </property>
     <property name="styleSheet">
@@ -576,12 +576,12 @@ color:#2A3540;
      <string>Kia Ora, </string>
     </property>
    </widget>
-   <widget class="QLabel" name="username">
+   <widget class="QLabel" name="usernameTITLE">
     <property name="geometry">
      <rect>
       <x>170</x>
       <y>100</y>
-      <width>383</width>
+      <width>211</width>
       <height>65</height>
      </rect>
     </property>
@@ -660,14 +660,52 @@ bookkeeper@library.co.nz</string>
      <string>LOGOUT</string>
     </property>
    </widget>
+   <widget class="QLabel" name="IDTITLE">
+    <property name="geometry">
+     <rect>
+      <x>520</x>
+      <y>200</y>
+      <width>91</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 600 35pt &quot;Work Sans&quot;;
+color:#2A3540;
+</string>
+    </property>
+    <property name="text">
+     <string>[+ID]</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="useridheader">
+    <property name="geometry">
+     <rect>
+      <x>360</x>
+      <y>200</y>
+      <width>151</width>
+      <height>73</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 700 40pt &quot;Work Sans&quot;;
+color:#2A3540;
+</string>
+    </property>
+    <property name="text">
+     <string>User ID:</string>
+    </property>
+   </widget>
    <zorder>label_3</zorder>
    <zorder>frame_3</zorder>
    <zorder>frame</zorder>
    <zorder>label</zorder>
-   <zorder>username</zorder>
+   <zorder>usernameTITLE</zorder>
    <zorder>label_10</zorder>
    <zorder>label_15</zorder>
    <zorder>logoutbutton</zorder>
+   <zorder>IDTITLE</zorder>
+   <zorder>useridheader</zorder>
   </widget>
  </widget>
  <resources>

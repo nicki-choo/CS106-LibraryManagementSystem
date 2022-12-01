@@ -25,6 +25,7 @@ public:
     void connectDB();
 
     void setUsername(QString username);
+    void setID(QString ID);
     void showBookNum();
     void showMemberNum();
     void showAuthorNum();

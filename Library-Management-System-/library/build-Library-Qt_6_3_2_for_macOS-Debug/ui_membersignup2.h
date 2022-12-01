@@ -33,6 +33,10 @@ public:
     QLabel *label_2;
     QLineEdit *name;
     QLineEdit *password;
+    QLabel *label_4;
+    QLabel *label_5;
+    QLabel *label_6;
+    QLabel *label_7;
 
     void setupUi(QDialog *membersignup2)
     {
@@ -41,7 +45,7 @@ public:
         membersignup2->resize(708, 480);
         groupBox = new QGroupBox(membersignup2);
         groupBox->setObjectName(QString::fromUtf8("groupBox"));
-        groupBox->setGeometry(QRect(70, 50, 501, 471));
+        groupBox->setGeometry(QRect(70, 210, 531, 281));
         groupBox->setStyleSheet(QString::fromUtf8("font: 600 24pt \"Work Sans\";\n"
 "border-color: rgb(196, 178, 255);\n"
 "border-color: rgb(170, 0, 255);\n"
@@ -178,6 +182,27 @@ public:
 
         gridLayout->addWidget(password, 2, 1, 1, 2);
 
+        label_4 = new QLabel(membersignup2);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(0, 150, 711, 341));
+        label_4->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
+        label_5 = new QLabel(membersignup2);
+        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setGeometry(QRect(0, 30, 501, 101));
+        label_5->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/eventsimg2.jpeg")));
+        label_6 = new QLabel(membersignup2);
+        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setGeometry(QRect(410, 30, 471, 101));
+        label_6->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/download.jpeg")));
+        label_7 = new QLabel(membersignup2);
+        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setGeometry(QRect(210, 0, 311, 131));
+        label_7->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/Ellipse 19.png")));
+        label_4->raise();
+        groupBox->raise();
+        label_5->raise();
+        label_6->raise();
+        label_7->raise();
 
         retranslateUi(membersignup2);
 
@@ -187,13 +212,17 @@ public:
     void retranslateUi(QDialog *membersignup2)
     {
         membersignup2->setWindowTitle(QCoreApplication::translate("membersignup2", "Dialog", nullptr));
-        groupBox->setTitle(QCoreApplication::translate("membersignup2", "Sign Up", nullptr));
-        label_3->setText(QCoreApplication::translate("membersignup2", "PASSWORD", nullptr));
+        groupBox->setTitle(QString());
+        label_3->setText(QCoreApplication::translate("membersignup2", "Password", nullptr));
         backButton->setText(QCoreApplication::translate("membersignup2", "BACK", nullptr));
         createButton->setText(QCoreApplication::translate("membersignup2", "CREATE", nullptr));
-        label->setText(QCoreApplication::translate("membersignup2", "USERNAME", nullptr));
-        label_2->setText(QCoreApplication::translate("membersignup2", "NAME", nullptr));
+        label->setText(QCoreApplication::translate("membersignup2", "Username", nullptr));
+        label_2->setText(QCoreApplication::translate("membersignup2", "Nickname", nullptr));
         password->setText(QString());
+        label_4->setText(QString());
+        label_5->setText(QString());
+        label_6->setText(QString());
+        label_7->setText(QString());
     } // retranslateUi
 
 };

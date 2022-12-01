@@ -10,6 +10,7 @@
 #include "memberprebook.h"
 #include "memberprofile.h"
 #include "memberedit.h"
+#include "memberedit.h"
 
 memberlibrary::memberlibrary(QWidget *parent) :
     QDialog(parent),
@@ -17,7 +18,9 @@ memberlibrary::memberlibrary(QWidget *parent) :
 {
     ui->setupUi(this);
 
-   //  setMemUsername(username_2);
+    this->setWindowTitle("Bookkeeper");
+
+
 }
 void memberlibrary::connectDB()
 {
@@ -81,8 +84,14 @@ void memberlibrary::connectDB()
 
 void memberlibrary::setUsername(QString username)
 {
-    ui->username->setText(username);
+    ui->usernameTITLE->setText(username);
 }
+
+void memberlibrary::setID(QString username)
+{
+   // ui->IDTITLE->setText(ID);
+}
+
 memberlibrary::~memberlibrary()
 {
     delete ui;
