@@ -68,15 +68,17 @@ public:
     QPushButton *DELETE;
     QPushButton *CANCEL;
     QTableView *tableView;
+    QLabel *label;
+    QLabel *label_2;
 
     void setupUi(QDialog *memberprebook)
     {
         if (memberprebook->objectName().isEmpty())
             memberprebook->setObjectName(QString::fromUtf8("memberprebook"));
-        memberprebook->resize(1069, 734);
+        memberprebook->resize(1021, 743);
         layoutWidget = new QWidget(memberprebook);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(6, 10, 406, 645));
+        layoutWidget->setGeometry(QRect(21, 144, 461, 561));
         verticalLayout_3 = new QVBoxLayout(layoutWidget);
         verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
         verticalLayout_3->setContentsMargins(0, 0, 0, 0);
@@ -443,12 +445,26 @@ public:
 
         tableView = new QTableView(memberprebook);
         tableView->setObjectName(QString::fromUtf8("tableView"));
-        tableView->setGeometry(QRect(420, 10, 491, 641));
+        tableView->setGeometry(QRect(490, 60, 491, 641));
         tableView->setStyleSheet(QString::fromUtf8("QTableView { background-color: #FFFFFF;\n"
 "	 border: 1px  solid;\n"
 "     border-radius: 4px;\n"
 "	border-color: #001873;\n"
 "	font: 20pt;}"));
+        label = new QLabel(memberprebook);
+        label->setObjectName(QString::fromUtf8("label"));
+        label->setGeometry(QRect(20, 32, 281, 91));
+        label->setStyleSheet(QString::fromUtf8("font: 700 40pt \"Work Sans\";\n"
+"color:#2A3540;\n"
+""));
+        label_2 = new QLabel(memberprebook);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(10, 20, 991, 711));
+        label_2->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
+        label_2->raise();
+        layoutWidget->raise();
+        tableView->raise();
+        label->raise();
 
         retranslateUi(memberprebook);
 
@@ -461,7 +477,7 @@ public:
         label_7->setText(QCoreApplication::translate("memberprebook", "Book ID", nullptr));
         SearchBookBtn->setText(QCoreApplication::translate("memberprebook", "Search Book", nullptr));
         BookName->setText(QString());
-        label_8->setText(QCoreApplication::translate("memberprebook", "Member ID", nullptr));
+        label_8->setText(QCoreApplication::translate("memberprebook", "Enter your member ID", nullptr));
         SearchMemberBtn->setText(QCoreApplication::translate("memberprebook", "Assign", nullptr));
         MemberName->setText(QString());
         label_9->setText(QCoreApplication::translate("memberprebook", "Is This Book Available:", nullptr));
@@ -470,9 +486,11 @@ public:
         label_10->setText(QCoreApplication::translate("memberprebook", "From", nullptr));
         label_11->setText(QCoreApplication::translate("memberprebook", "To", nullptr));
         groupBox_2->setTitle(QCoreApplication::translate("memberprebook", "Note", nullptr));
-        PREBOOK->setText(QCoreApplication::translate("memberprebook", "PREBOOK", nullptr));
-        DELETE->setText(QCoreApplication::translate("memberprebook", "DELETE", nullptr));
-        CANCEL->setText(QCoreApplication::translate("memberprebook", "CANCEL", nullptr));
+        PREBOOK->setText(QCoreApplication::translate("memberprebook", "Prebook", nullptr));
+        DELETE->setText(QCoreApplication::translate("memberprebook", "Delete", nullptr));
+        CANCEL->setText(QCoreApplication::translate("memberprebook", "Cancel", nullptr));
+        label->setText(QCoreApplication::translate("memberprebook", "Prebook", nullptr));
+        label_2->setText(QString());
     } // retranslateUi
 
 };

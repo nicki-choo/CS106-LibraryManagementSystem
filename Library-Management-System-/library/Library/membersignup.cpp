@@ -16,6 +16,7 @@ membersignup::membersignup(QWidget *parent) :
     ui(new Ui::membersignup)
 {
     ui->setupUi(this);
+    this->setWindowTitle("New Account");
 }
 
 membersignup::~membersignup()

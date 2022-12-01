@@ -17,7 +17,7 @@
    <property name="geometry">
     <rect>
      <x>-240</x>
-     <y>481</y>
+     <y>520</y>
      <width>461</width>
      <height>31</height>
     </rect>
@@ -33,7 +33,7 @@
    <property name="geometry">
     <rect>
      <x>500</x>
-     <y>10</y>
+     <y>20</y>
      <width>351</width>
      <height>501</height>
     </rect>
@@ -253,10 +253,10 @@ color: #2A3540;</string>
   <widget class="QFrame" name="frame">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>491</width>
-     <height>471</height>
+     <x>20</x>
+     <y>220</y>
+     <width>481</width>
+     <height>301</height>
     </rect>
    </property>
    <property name="frameShape">
@@ -332,8 +332,66 @@ font-color: #2A3540;}
     </item>
    </layout>
   </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>110</y>
+     <width>281</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 40pt &quot;Work Sans&quot;;
+color:#2A3540;
+</string>
+   </property>
+   <property name="text">
+    <string>Search </string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>190</y>
+     <width>901</width>
+     <height>431</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/Desktop/MemResource/background.png</pixmap>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>-3</x>
+     <y>-5</y>
+     <width>231</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/Icons/Group 42.jpg</pixmap>
+   </property>
+  </widget>
+  <zorder>label_3</zorder>
+  <zorder>buttonBox</zorder>
+  <zorder>frame_2</zorder>
+  <zorder>frame</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_4</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>buttonBox</sender>

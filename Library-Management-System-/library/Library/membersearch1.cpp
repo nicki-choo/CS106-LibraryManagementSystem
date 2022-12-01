@@ -7,7 +7,7 @@ membersearch1::membersearch1(QWidget *parent) :
     ui(new Ui::membersearch1)
 {
     ui->setupUi(this);
-    this->setWindowTitle("Books List");
+    this->setWindowTitle("Search Book Catalogue");
 
     //call the mail Database
     digitalLibrary lib;

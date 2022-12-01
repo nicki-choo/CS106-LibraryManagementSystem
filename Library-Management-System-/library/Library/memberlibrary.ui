@@ -361,55 +361,7 @@ border-radius:8px;
 }</string>
          </property>
          <property name="text">
-          <string>Edit Profile</string>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
-         </property>
-         <property name="default">
-          <bool>false</bool>
-         </property>
-         <property name="flat">
-          <bool>true</bool>
-         </property>
-        </widget>
-       </item>
-      </layout>
-     </item>
-     <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_9">
-       <item>
-        <spacer name="horizontalSpacer_7">
-         <property name="orientation">
-          <enum>Qt::Horizontal</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Fixed</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>28</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item>
-        <widget class="QPushButton" name="viewProfile">
-         <property name="styleSheet">
-          <string notr="true">QPushButton{
-font: 500 10pt &quot;Work Sans&quot;;
-color: #2A3540;
-padding : 0 8px;
-}
-QPushButton:hover:!pressed
-{
-background:#FFFFFF;
-border-radius:8px;
-}</string>
-         </property>
-         <property name="text">
-          <string>View Profile</string>
+          <string>View/Edit Profile</string>
          </property>
          <property name="autoDefault">
           <bool>false</bool>

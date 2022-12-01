@@ -51,6 +51,9 @@ public:
     QLabel *label;
     QLineEdit *value;
     QTableView *tableView;
+    QLabel *label_2;
+    QLabel *label_3;
+    QLabel *label_4;
 
     void setupUi(QDialog *membersearch1)
     {
@@ -59,12 +62,12 @@ public:
         membersearch1->resize(895, 560);
         buttonBox = new QDialogButtonBox(membersearch1);
         buttonBox->setObjectName(QString::fromUtf8("buttonBox"));
-        buttonBox->setGeometry(QRect(-240, 481, 461, 31));
+        buttonBox->setGeometry(QRect(-240, 520, 461, 31));
         buttonBox->setOrientation(Qt::Horizontal);
         buttonBox->setStandardButtons(QDialogButtonBox::Cancel|QDialogButtonBox::Ok);
         frame_2 = new QFrame(membersearch1);
         frame_2->setObjectName(QString::fromUtf8("frame_2"));
-        frame_2->setGeometry(QRect(500, 10, 351, 501));
+        frame_2->setGeometry(QRect(500, 20, 351, 501));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         verticalLayout_4 = new QVBoxLayout(frame_2);
@@ -183,7 +186,7 @@ public:
 
         frame = new QFrame(membersearch1);
         frame->setObjectName(QString::fromUtf8("frame"));
-        frame->setGeometry(QRect(10, 10, 491, 471));
+        frame->setGeometry(QRect(20, 220, 481, 301));
         frame->setFrameShape(QFrame::StyledPanel);
         frame->setFrameShadow(QFrame::Raised);
         verticalLayout_2 = new QVBoxLayout(frame);
@@ -236,6 +239,26 @@ public:
 
         verticalLayout_2->addLayout(verticalLayout);
 
+        label_2 = new QLabel(membersearch1);
+        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setGeometry(QRect(210, 110, 281, 81));
+        label_2->setStyleSheet(QString::fromUtf8("font: 700 40pt \"Work Sans\";\n"
+"color:#2A3540;\n"
+""));
+        label_3 = new QLabel(membersearch1);
+        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setGeometry(QRect(0, 190, 901, 431));
+        label_3->setPixmap(QPixmap(QString::fromUtf8(":/Desktop/MemResource/background.png")));
+        label_4 = new QLabel(membersearch1);
+        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setGeometry(QRect(-3, -5, 231, 191));
+        label_4->setPixmap(QPixmap(QString::fromUtf8(":/Icons/Group 42.jpg")));
+        label_3->raise();
+        buttonBox->raise();
+        frame_2->raise();
+        frame->raise();
+        label_2->raise();
+        label_4->raise();
 
         retranslateUi(membersearch1);
         QObject::connect(buttonBox, &QDialogButtonBox::accepted, membersearch1, qOverload<>(&QDialog::accept));
@@ -258,6 +281,9 @@ public:
         date->setText(QCoreApplication::translate("membersearch1", "Date Received", nullptr));
         desc->setText(QCoreApplication::translate("membersearch1", "Description", nullptr));
         label->setText(QCoreApplication::translate("membersearch1", "Search", nullptr));
+        label_2->setText(QCoreApplication::translate("membersearch1", "Search ", nullptr));
+        label_3->setText(QString());
+        label_4->setText(QString());
     } // retranslateUi
 
 };

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1069</width>
-    <height>734</height>
+    <width>1021</width>
+    <height>743</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,10 +16,10 @@
   <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
-     <x>6</x>
-     <y>10</y>
-     <width>406</width>
-     <height>645</height>
+     <x>21</x>
+     <y>144</y>
+     <width>461</width>
+     <height>561</height>
     </rect>
    </property>
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -139,7 +139,7 @@ color: #2A3540;</string>
 color: #2A3540;</string>
         </property>
         <property name="text">
-         <string>Member ID</string>
+         <string>Enter your member ID</string>
         </property>
        </widget>
       </item>
@@ -402,7 +402,7 @@ QPushButton:pressed
 }</string>
         </property>
         <property name="text">
-         <string>PREBOOK</string>
+         <string>Prebook</string>
         </property>
        </widget>
       </item>
@@ -440,7 +440,7 @@ QPushButton:pressed
 }</string>
         </property>
         <property name="text">
-         <string>DELETE</string>
+         <string>Delete</string>
         </property>
        </widget>
       </item>
@@ -478,7 +478,7 @@ QPushButton:pressed
 }</string>
         </property>
         <property name="text">
-         <string>CANCEL</string>
+         <string>Cancel</string>
         </property>
        </widget>
       </item>
@@ -489,8 +489,8 @@ QPushButton:pressed
   <widget class="QTableView" name="tableView">
    <property name="geometry">
     <rect>
-     <x>420</x>
-     <y>10</y>
+     <x>490</x>
+     <y>60</y>
      <width>491</width>
      <height>641</height>
     </rect>
@@ -503,7 +503,47 @@ QPushButton:pressed
 	font: 20pt;}</string>
    </property>
   </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>32</y>
+     <width>281</width>
+     <height>91</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 700 40pt &quot;Work Sans&quot;;
+color:#2A3540;
+</string>
+   </property>
+   <property name="text">
+    <string>Prebook</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>20</y>
+     <width>991</width>
+     <height>711</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="icons.qrc">:/Desktop/MemResource/background.png</pixmap>
+   </property>
+  </widget>
+  <zorder>label_2</zorder>
+  <zorder>layoutWidget</zorder>
+  <zorder>tableView</zorder>
+  <zorder>label</zorder>
  </widget>
- <resources/>
+ <resources>
+  <include location="icons.qrc"/>
+ </resources>
  <connections/>
 </ui>

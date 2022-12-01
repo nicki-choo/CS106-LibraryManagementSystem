@@ -11,6 +11,7 @@
 #include "memberlibrary.h"
 #include "digitallibrary.h"
 #include <QApplication>
+#include "membersearch1.h"
 
 int main(int argc, char *argv[])
 {
