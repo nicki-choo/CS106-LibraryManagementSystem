@@ -17,7 +17,7 @@
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-   memberedit w;
+   choosepage w;
     w.show();
     return a.exec();
 }

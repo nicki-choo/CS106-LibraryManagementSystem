@@ -627,7 +627,7 @@ color:#2A3540;
 </string>
     </property>
     <property name="text">
-     <string>[+ID]</string>
+     <string>11</string>
     </property>
    </widget>
    <widget class="QLabel" name="useridheader">

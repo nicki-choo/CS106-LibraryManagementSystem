@@ -29,7 +29,6 @@ public:
     QLabel *label_6;
     QLineEdit *password;
     QLabel *label_7;
-    QPushButton *forgetPasswdBtn2;
     QLineEdit *username;
     QPushButton *loginButton2;
     QPushButton *signUpButton2;
@@ -82,35 +81,6 @@ public:
 
         gridLayout_2->addWidget(label_7, 0, 0, 1, 1);
 
-        forgetPasswdBtn2 = new QPushButton(loginGroup);
-        forgetPasswdBtn2->setObjectName(QString::fromUtf8("forgetPasswdBtn2"));
-        forgetPasswdBtn2->setFocusPolicy(Qt::ClickFocus);
-        forgetPasswdBtn2->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"border-radius:15px;\n"
-"padding : 0 4px;\n"
-"background: #FFFFFF;\n"
-"border-radius:10px;\n"
-"border-color: #001873;\n"
-"border-width: 3px;\n"
-"border-style: solid;\n"
-"color: #2A3540;\n"
-"font: 600 24pt \"Work Sans\";\n"
-"}\n"
-"QPushButton:hover:!pressed\n"
-"\n"
-"{\n"
-"background:#4f85e2;\n"
-"}\n"
-"QToolButton\n"
-"{\n"
-"\n"
-"border-radius:10px;\n"
-"bacground:red;\n"
-"color:red;\n"
-"}"));
-
-        gridLayout_2->addWidget(forgetPasswdBtn2, 3, 2, 1, 1);
-
         username = new QLineEdit(loginGroup);
         username->setObjectName(QString::fromUtf8("username"));
         username->setStyleSheet(QString::fromUtf8("QLineEdit{\n"
@@ -157,7 +127,7 @@ public:
 "}"));
         loginButton2->setAutoDefault(true);
 
-        gridLayout_2->addWidget(loginButton2, 2, 2, 1, 1);
+        gridLayout_2->addWidget(loginButton2, 2, 1, 1, 3);
 
         signUpButton2 = new QPushButton(loginGroup);
         signUpButton2->setObjectName(QString::fromUtf8("signUpButton2"));
@@ -191,7 +161,7 @@ public:
 "              transition: 0.9s; \n"
 "}"));
 
-        gridLayout_2->addWidget(signUpButton2, 4, 2, 1, 1);
+        gridLayout_2->addWidget(signUpButton2, 3, 1, 1, 3);
 
         label = new QLabel(memberlogin);
         label->setObjectName(QString::fromUtf8("label"));
@@ -221,7 +191,6 @@ public:
         loginGroup->setTitle(QCoreApplication::translate("memberlogin", "Login", nullptr));
         label_6->setText(QCoreApplication::translate("memberlogin", "Password", nullptr));
         label_7->setText(QCoreApplication::translate("memberlogin", "Username", nullptr));
-        forgetPasswdBtn2->setText(QCoreApplication::translate("memberlogin", "Forgot Password", nullptr));
         loginButton2->setText(QCoreApplication::translate("memberlogin", "Login", nullptr));
         signUpButton2->setText(QCoreApplication::translate("memberlogin", "Sign Up", nullptr));
         label->setText(QString());

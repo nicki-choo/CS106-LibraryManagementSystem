@@ -85,41 +85,6 @@ background-color: none;</string>
       </property>
      </widget>
     </item>
-    <item row="3" column="2">
-     <widget class="QPushButton" name="forgetPasswdBtn2">
-      <property name="focusPolicy">
-       <enum>Qt::ClickFocus</enum>
-      </property>
-      <property name="styleSheet">
-       <string notr="true">QPushButton{
-border-radius:15px;
-padding : 0 4px;
-background: #FFFFFF;
-border-radius:10px;
-border-color: #001873;
-border-width: 3px;
-border-style: solid;
-color: #2A3540;
-font: 600 24pt &quot;Work Sans&quot;;
-}
-QPushButton:hover:!pressed
-
-{
-background:#4f85e2;
-}
-QToolButton
-{
-
-border-radius:10px;
-bacground:red;
-color:red;
-}</string>
-      </property>
-      <property name="text">
-       <string>Forgot Password</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="1" colspan="3">
      <widget class="QLineEdit" name="username">
       <property name="styleSheet">
@@ -133,7 +98,7 @@ color:red;
       </property>
      </widget>
     </item>
-    <item row="2" column="2">
+    <item row="2" column="1" colspan="3">
      <widget class="QPushButton" name="loginButton2">
       <property name="mouseTracking">
        <bool>true</bool>
@@ -180,7 +145,7 @@ QPushButton:pressed
       </property>
      </widget>
     </item>
-    <item row="4" column="2">
+    <item row="3" column="1" colspan="3">
      <widget class="QPushButton" name="signUpButton2">
       <property name="styleSheet">
        <string notr="true">QPushButton{
