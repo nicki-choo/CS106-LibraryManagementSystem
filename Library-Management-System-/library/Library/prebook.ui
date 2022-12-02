@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Prebook</class>
+ <widget class="QDialog" name="Prebook">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>671</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <widget class="QTableView" name="tableView">
+   <property name="geometry">
+    <rect>
+     <x>425</x>
+     <y>21</y>
+     <width>491</width>
+     <height>641</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QTableView { background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;}</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>11</x>
+     <y>21</y>
+     <width>406</width>
+     <height>645</height>
+    </rect>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout_3">
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="styleSheet">
+         <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+        </property>
+        <property name="text">
+         <string>Book ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="BookIDline">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SearchBookBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+        </property>
+        <property name="text">
+         <string>SEARCH BOOK</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="BookName">
+        <property name="styleSheet">
+         <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="styleSheet">
+         <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+        </property>
+        <property name="text">
+         <string>Member ID</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLineEdit" name="MemberIDLine">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="SearchMemberBtn">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+        </property>
+        <property name="text">
+         <string>SEARCH MEMBER</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_4">
+      <item>
+       <spacer name="horizontalSpacer_4">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="MemberName">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>128</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_5">
+      <item>
+       <widget class="QLabel" name="label_3">
+        <property name="styleSheet">
+         <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+        </property>
+        <property name="text">
+         <string>Is This Book Available:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="availability">
+        <property name="styleSheet">
+         <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+        </property>
+        <property name="text">
+         <string>Yes-Or-No</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_5">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>138</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="styleSheet">
+       <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+      </property>
+      <property name="title">
+       <string>Prebook Date and Time</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="text">
+            <string>From</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="FromDate">
+           <property name="styleSheet">
+            <string notr="true">QDateEdit{
+		background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+}</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="text">
+            <string>To</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="ToDate">
+           <property name="styleSheet">
+            <string notr="true">QDateEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+}</string>
+           </property>
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QGroupBox" name="groupBox_2">
+      <property name="styleSheet">
+       <string notr="true">font: 500 13pt &quot;Work Sans&quot;;
+color: #2A3540;</string>
+      </property>
+      <property name="title">
+       <string>Note</string>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QTextEdit" name="textEdit">
+         <property name="styleSheet">
+          <string notr="true">QTextEdit{
+	background-color: #FFFFFF;
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt;
+	
+}</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <item>
+       <widget class="QPushButton" name="PREBOOK">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+        </property>
+        <property name="text">
+         <string>PREBOOK</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="DELETE">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+        </property>
+        <property name="text">
+         <string>DELETE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="CANCEL">
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+color: #2A3540;
+font: 600 14pt &quot;Work Sans&quot;;
+border-radius:8px;
+padding : 3px;
+background: #FFFFFF;
+border-width: 1px;
+border-style: solid;
+border-color: #001873;
+border-radius:10px;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}
+
+QPushButton:pressed
+{
+              font-size: 19px;
+              transition: 0.9s; 
+}</string>
+        </property>
+        <property name="text">
+         <string>CANCEL</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
