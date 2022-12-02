@@ -45,7 +45,7 @@ public:
     {
         if (Login->objectName().isEmpty())
             Login->setObjectName(QString::fromUtf8("Login"));
-        Login->resize(779, 553);
+        Login->resize(779, 525);
         Login->setStyleSheet(QString::fromUtf8("background-color: rgb(255, 255, 255);"));
         verticalLayout = new QVBoxLayout(Login);
         verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));

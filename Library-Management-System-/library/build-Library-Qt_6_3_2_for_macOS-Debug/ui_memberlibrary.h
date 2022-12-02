@@ -52,9 +52,6 @@ public:
     QHBoxLayout *horizontalLayout_8;
     QSpacerItem *horizontalSpacer_6;
     QPushButton *editProfile;
-    QHBoxLayout *horizontalLayout_9;
-    QSpacerItem *horizontalSpacer_7;
-    QPushButton *viewProfile;
     QHBoxLayout *horizontalLayout_18;
     QSpacerItem *horizontalSpacer_11;
     QLabel *catalogue;
@@ -272,32 +269,6 @@ public:
 
         verticalLayout->addLayout(horizontalLayout_8);
 
-        horizontalLayout_9 = new QHBoxLayout();
-        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
-        horizontalSpacer_7 = new QSpacerItem(28, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
-
-        horizontalLayout_9->addItem(horizontalSpacer_7);
-
-        viewProfile = new QPushButton(frame);
-        viewProfile->setObjectName(QString::fromUtf8("viewProfile"));
-        viewProfile->setStyleSheet(QString::fromUtf8("QPushButton{\n"
-"font: 500 10pt \"Work Sans\";\n"
-"color: #2A3540;\n"
-"padding : 0 8px;\n"
-"}\n"
-"QPushButton:hover:!pressed\n"
-"{\n"
-"background:#FFFFFF;\n"
-"border-radius:8px;\n"
-"}"));
-        viewProfile->setAutoDefault(false);
-        viewProfile->setFlat(true);
-
-        horizontalLayout_9->addWidget(viewProfile);
-
-
-        verticalLayout->addLayout(horizontalLayout_9);
-
         horizontalLayout_18 = new QHBoxLayout();
         horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
         horizontalSpacer_11 = new QSpacerItem(18, 20, QSizePolicy::Fixed, QSizePolicy::Minimum);
@@ -425,7 +396,6 @@ public:
         viewEvents->setDefault(false);
         viewBorrows->setDefault(false);
         editProfile->setDefault(false);
-        viewProfile->setDefault(false);
         searchBook->setDefault(false);
         prebook1->setDefault(false);
 
@@ -451,8 +421,7 @@ public:
         viewEvents->setText(QCoreApplication::translate("memberlibrary", "Events", nullptr));
         profile1->setText(QCoreApplication::translate("memberlibrary", "Profile", nullptr));
         viewBorrows->setText(QCoreApplication::translate("memberlibrary", "Borrowed Books", nullptr));
-        editProfile->setText(QCoreApplication::translate("memberlibrary", "Edit Profile", nullptr));
-        viewProfile->setText(QCoreApplication::translate("memberlibrary", "View Profile", nullptr));
+        editProfile->setText(QCoreApplication::translate("memberlibrary", "View/Edit Profile", nullptr));
         catalogue->setText(QCoreApplication::translate("memberlibrary", "Catalogue", nullptr));
         searchBook->setText(QCoreApplication::translate("memberlibrary", "Search", nullptr));
         prebook1->setText(QCoreApplication::translate("memberlibrary", "Prebook", nullptr));

@@ -12,11 +12,12 @@
 #include "digitallibrary.h"
 #include <QApplication>
 #include "membersearch1.h"
+#include "memberedit.h"
 
 int main(int argc, char *argv[])
 {
     QApplication a(argc, argv);
-   choosepage w;
+   memberedit w;
     w.show();
     return a.exec();
 }
