@@ -108,7 +108,7 @@ void ManageAuthors::on_editButton_clicked()
         QString expertise = ui->authorTableView->model()->data(ui->authorTableView->model()->index(row.row(), 3)).toString();
         QString about = ui->authorTableView->model()->data(ui->authorTableView->model()->index(row.row(), 4)).toString();
 
-        //set the ID and the name in te correspondant lienEdit
+        //set the ID and the name in te correspondant line Edit
         ui->ID->setText(ID);
         ui->firstName->setText(firstName);
         ui->lastName->setText(lastName);

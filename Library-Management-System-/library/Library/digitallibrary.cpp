@@ -44,7 +44,7 @@ void digitalLibrary::connectDB()
     if(!db.open())
         QMessageBox::critical(this, "FAILED", "DB is not opened");
 
-    //définir la requete sur la base de données
+    //define the query on the database
     auto query = QSqlQuery(db);
 
     //Create a table named accounts
