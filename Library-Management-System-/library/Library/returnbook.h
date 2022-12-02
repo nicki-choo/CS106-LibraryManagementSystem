@@ -25,8 +25,11 @@ private slots:
 
     void on_bookStatus_currentIndexChanged(int index);
 
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> dev
 private:
     Ui::ReturnBook *ui;
 };

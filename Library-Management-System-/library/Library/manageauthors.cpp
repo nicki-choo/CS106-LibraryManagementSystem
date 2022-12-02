@@ -13,7 +13,11 @@ ManageAuthors::ManageAuthors(QWidget *parent) :
 
     model = new QSqlQueryModel;
 
+<<<<<<< HEAD
     //call the main Database
+=======
+    //call the mail Database
+>>>>>>> dev
     digitalLibrary lib;
     auto db = lib.db;
 
@@ -71,7 +75,11 @@ void ManageAuthors::on_addButtton_clicked()
             if(!query.exec(update))
                 qDebug() << "Cannot update authors";
 
+<<<<<<< HEAD
             //Show authors in QTableView
+=======
+            //Afficher les auteurs dans QTableView
+>>>>>>> dev
             model->setQuery(select);
             ui->authorTableView->setModel(model);
         }
@@ -83,7 +91,11 @@ void ManageAuthors::on_addButtton_clicked()
             if(!query.exec(addAuthor.arg(ID.toInt()).arg(firstName).arg(lastName).arg(expertise).arg(about)))
                 qDebug() << "Cannot add authors";
 
+<<<<<<< HEAD
             //Show genre in QTableView
+=======
+            //Afficher les genres dans QTableView
+>>>>>>> dev
             model->setQuery(select);
             ui->authorTableView->setModel(model);
         }

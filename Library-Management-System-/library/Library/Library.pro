@@ -13,7 +13,10 @@ SOURCES += \
     addmember.cpp \
     authorslist.cpp \
     booklist.cpp \
+<<<<<<< HEAD
     choosepage.cpp \
+=======
+>>>>>>> dev
     deletebook.cpp \
     deletemember.cpp \
     digitallibrary.cpp \
@@ -25,6 +28,7 @@ SOURCES += \
     main.cpp \
     manageauthors.cpp \
     managebooks.cpp \
+<<<<<<< HEAD
     memberedit.cpp \
     memberevents.cpp \
     memberlibrary.cpp \
@@ -37,6 +41,10 @@ SOURCES += \
     memberslist.cpp \
     newpasswd.cpp \
     prebook.cpp \
+=======
+    memberslist.cpp \
+    newpasswd.cpp \
+>>>>>>> dev
     returnbook.cpp \
     signup.cpp
 
@@ -45,7 +53,10 @@ HEADERS += \
     addmember.h \
     authorslist.h \
     booklist.h \
+<<<<<<< HEAD
     choosepage.h \
+=======
+>>>>>>> dev
     deletebook.h \
     deletemember.h \
     digitallibrary.h \
@@ -56,6 +67,7 @@ HEADERS += \
     login.h \
     manageauthors.h \
     managebooks.h \
+<<<<<<< HEAD
     memberedit.h \
     memberevents.h \
     memberlibrary.h \
@@ -68,6 +80,10 @@ HEADERS += \
     memberslist.h \
     newpasswd.h \
     prebook.h \
+=======
+    memberslist.h \
+    newpasswd.h \
+>>>>>>> dev
     returnbook.h \
     signup.h
 
@@ -76,7 +92,10 @@ FORMS += \
     addmember.ui \
     authorslist.ui \
     booklist.ui \
+<<<<<<< HEAD
     choosepage.ui \
+=======
+>>>>>>> dev
     deletebook.ui \
     deletemember.ui \
     digitallibrary.ui \
@@ -87,6 +106,7 @@ FORMS += \
     login.ui \
     manageauthors.ui \
     managebooks.ui \
+<<<<<<< HEAD
     memberedit.ui \
     memberevents.ui \
     memberlibrary.ui \
@@ -99,6 +119,10 @@ FORMS += \
     memberslist.ui \
     newpasswd.ui \
     prebook.ui \
+=======
+    memberslist.ui \
+    newpasswd.ui \
+>>>>>>> dev
     returnbook.ui \
     signup.ui
 

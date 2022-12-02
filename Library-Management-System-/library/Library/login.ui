@@ -7,7 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>779</width>
+<<<<<<< HEAD
     <height>525</height>
+=======
+    <height>553</height>
+>>>>>>> dev
    </rect>
   </property>
   <property name="windowTitle">
@@ -69,6 +73,7 @@ border-color: rgb(170, 0, 255);
 color: #2A3540</string>
      </property>
      <property name="title">
+<<<<<<< HEAD
       <string>ADMINISTRATOR LOGIN</string>
      </property>
      <layout class="QGridLayout" name="gridLayout_2">
@@ -101,6 +106,11 @@ color: #2A3540</string>
         </property>
        </widget>
       </item>
+=======
+      <string>LOGIN</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_2">
+>>>>>>> dev
       <item row="0" column="0">
        <widget class="QLabel" name="label_7">
         <property name="styleSheet">
@@ -151,6 +161,85 @@ QPushButton:pressed
         </property>
        </widget>
       </item>
+<<<<<<< HEAD
+=======
+      <item row="3" column="1" colspan="2">
+       <widget class="QPushButton" name="forgetPasswdBtn">
+        <property name="focusPolicy">
+         <enum>Qt::ClickFocus</enum>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+border-radius:15px;
+padding : 0 4px;
+background: #FFFFFF;
+border-radius:10px;
+border-color: #001873;
+border-width: 3px;
+border-style: solid;
+color: #2A3540;
+font: 600 24pt &quot;Work Sans&quot;;
+}
+QPushButton:hover:!pressed
+
+{
+background:#4f85e2;
+}
+QToolButton
+{
+
+border-radius:10px;
+bacground:red;
+color:red;
+}</string>
+        </property>
+        <property name="text">
+         <string>FORGET PASSWORD</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1" colspan="2">
+       <widget class="QLineEdit" name="username">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt &quot;Work Sans&quot;;
+}</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QLabel" name="label_6">
+        <property name="styleSheet">
+         <string notr="true">font: 600 18pt &quot;Work Sans&quot;;
+font-color: #2A3540;
+background-color: none;</string>
+        </property>
+        <property name="text">
+         <string>PASSWORD</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1" colspan="2">
+       <widget class="QLineEdit" name="password">
+        <property name="styleSheet">
+         <string notr="true">QLineEdit{
+	background-color: rgb(255, 255, 255);
+	 border: 1px  solid;
+     border-radius: 4px;
+	border-color: #001873;
+	font: 20pt &quot;Work Sans&quot;;
+}</string>
+        </property>
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
+      </item>
+>>>>>>> dev
       <item row="2" column="1">
        <widget class="QPushButton" name="loginButton">
         <property name="mouseTracking">
@@ -198,6 +287,7 @@ QPushButton:pressed
         </property>
        </widget>
       </item>
+<<<<<<< HEAD
       <item row="1" column="0">
        <widget class="QLabel" name="label_6">
         <property name="styleSheet">
@@ -245,6 +335,8 @@ color:red;
         </property>
        </widget>
       </item>
+=======
+>>>>>>> dev
      </layout>
     </widget>
    </item>

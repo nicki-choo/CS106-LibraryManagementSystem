@@ -301,7 +301,11 @@ font-color: #2A3540
 color: #2A3540;</string>
         </property>
         <property name="text">
+<<<<<<< HEAD
          <string>Publish Date</string>
+=======
+         <string>Date</string>
+>>>>>>> dev
         </property>
        </widget>
       </item>

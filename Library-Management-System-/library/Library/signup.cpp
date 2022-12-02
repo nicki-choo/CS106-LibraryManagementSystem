@@ -35,7 +35,11 @@ void signUp::on_createButton_clicked()
     //Add name password and username to the db
     if((!username.isEmpty() & !name.isEmpty()) & !password.isEmpty())
     {
+<<<<<<< HEAD
 
+=======
+        //cherche si le compte existe
+>>>>>>> dev
         auto search = QSqlQuery(db);
         QString searchAcc = {"SELECT * FROM accounts WHERE username='"
                              +username+"' AND name='"+name+"' AND password='"

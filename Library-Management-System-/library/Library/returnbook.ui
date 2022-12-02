@@ -444,7 +444,11 @@ color: #2A3540;</string>
        <item>
         <widget class="QTableView" name="tableView">
          <property name="styleSheet">
+<<<<<<< HEAD
           <string notr="true">QTableView { background-color: #FFFFFF;
+=======
+          <string notr="true">QHeaderView::section { background-color: #FFFFFF;
+>>>>>>> dev
 	 border: 1px  solid;
      border-radius: 4px;
 	border-color: #001873;

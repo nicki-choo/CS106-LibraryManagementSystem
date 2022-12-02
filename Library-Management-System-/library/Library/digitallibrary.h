@@ -55,8 +55,11 @@ private slots:
 
     void on_returnBookBtn_clicked();
 
+<<<<<<< HEAD
     void on_prebookbookbtn_clicked();
 
+=======
+>>>>>>> dev
 private:
     Ui::digitalLibrary *ui;
 

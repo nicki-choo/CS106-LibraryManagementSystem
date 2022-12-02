@@ -13,7 +13,10 @@
 #include <booklist.h>
 #include <issuebook.h>
 #include <returnbook.h>
+<<<<<<< HEAD
 #include <prebook.h>
+=======
+>>>>>>> dev
 #include <QMessageBox>
 #include <QDebug>
 
@@ -23,7 +26,10 @@ digitalLibrary::digitalLibrary(QWidget *parent) :
 {
     ui->setupUi(this);
     connectDB();
+<<<<<<< HEAD
     this->setWindowTitle("Main Menu");
+=======
+>>>>>>> dev
 
     setUsername(username);
     showBookNum();
@@ -90,6 +96,7 @@ void digitalLibrary::connectDB()
                        "IssueDate date, ReturnDate date, Note VARCHAR(50))"};
     if(!query.exec(Table))
         QMessageBox::critical(this,"Info","Cannot create bookStatus Table");
+<<<<<<< HEAD
 
     //Create a table named prebook_list
     QString PrebookTable{"CREATE TABLE IF NOT EXISTS prebook_list"
@@ -97,6 +104,8 @@ void digitalLibrary::connectDB()
 
     if(!query.exec(PrebookTable))
         QMessageBox::critical(this,"Info", "Cannot create Prebook Table");
+=======
+>>>>>>> dev
 }
 
 digitalLibrary::~digitalLibrary()
@@ -176,12 +185,15 @@ void digitalLibrary::on_returnBookBtn_clicked()
     book.exec();
 }
 
+<<<<<<< HEAD
 void digitalLibrary::on_prebookbookbtn_clicked()
 {
     Prebook book;
     book.exec();
 }
 
+=======
+>>>>>>> dev
 void digitalLibrary::setUsername(QString username)
 {
     ui->username->setText(username);
@@ -299,6 +311,7 @@ void digitalLibrary::showCover(){
     }
 }
 
+<<<<<<< HEAD
 /*
   //Create a table named accounts
 QString accountTable{"CREATE TABLE IF NOT EXISTS accounts"
@@ -311,6 +324,8 @@ QString memberTable{"CREATE TABLE IF NOT EXISTS members"
 if(!query.exec(memberTable))
     QMessageBox::critical(this,"Info","Cannot create members Table");
 */
+=======
+>>>>>>> dev
 
 
 

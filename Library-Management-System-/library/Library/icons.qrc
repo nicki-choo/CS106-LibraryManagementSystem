@@ -7,6 +7,7 @@
         <file>three-books-svgrepo-com 1.png</file>
         <file>writer-svgrepo-com 1.png</file>
         <file>Group 6.png</file>
+<<<<<<< HEAD
         <file>Mercy.jpeg</file>
         <file>Murder-on-the-Orient-Express.jpg</file>
         <file>It novel.png</file>
@@ -37,5 +38,7 @@
         <file>../../../../../../Desktop/MemResource/thriller.png</file>
         <file>../../../../../../Desktop/MemResource/adminimg.png</file>
         <file>../../../../../../Desktop/MemResource/memberimg.png</file>
+=======
+>>>>>>> dev
     </qresource>
 </RCC>

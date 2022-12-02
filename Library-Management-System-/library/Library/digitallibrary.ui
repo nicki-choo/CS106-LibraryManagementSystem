@@ -7,7 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>850</width>
+<<<<<<< HEAD
     <height>864</height>
+=======
+    <height>825</height>
+>>>>>>> dev
    </rect>
   </property>
   <property name="windowTitle">
@@ -19,7 +23,11 @@
      <x>12</x>
      <y>12</y>
      <width>826</width>
+<<<<<<< HEAD
      <height>821</height>
+=======
+     <height>801</height>
+>>>>>>> dev
     </rect>
    </property>
    <property name="styleSheet">
@@ -1218,6 +1226,7 @@ border-radius:8px;
        </item>
       </layout>
      </item>
+<<<<<<< HEAD
      <item>
       <layout class="QHBoxLayout" name="horizontalLayout">
        <item>
@@ -1257,6 +1266,8 @@ border-radius:8px;
        </item>
       </layout>
      </item>
+=======
+>>>>>>> dev
     </layout>
    </widget>
    <widget class="QLabel" name="label_2">
